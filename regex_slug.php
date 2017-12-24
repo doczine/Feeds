@@ -8,7 +8,6 @@ $conn = db_connect();
 $xmlUrl = "/usr/home/capstone/search-terms.txt";
 $string = file_get_contents($xmlUrl);
 $array = preg_split("/(\r\n|\n|\r)/", $string);
-//|_
 
 foreach ($array as $i => $row) {
     $s = urldecode($row);

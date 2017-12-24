@@ -26,5 +26,11 @@ foreach($splitcontents as $val) {
     $client->set($val, $val); 
 }
 
+/*
+
+select * from results into outfile '/var/lib/mysql-files/export.csv';
+
+*/
+
 ?>
 

@@ -1,13 +1,31 @@
 <html>
 <head>
-<style>
-      tr:nth-of-type(odd) {
-      background-color:#F0FFFF;
-    }
-      tr:nth-of-type(even) {
-      background-color:#87CEFA;
-    }
-</style>
+<?php
+$search = $argv[1];
+$joe = $_SERVER['SERVER_NAME'];
+?>
+<title>Joe Hettich's News Feeds | <?php echo $search; ?></title>
+<meta property="og:title" content="Joe Hettich's News Feeds | <?php echo $search; ?>">
+<meta property="og:description" content="Aggregate news feed batch search">
+<meta property="og:image" content="http://<?php echo $joe; >/joehettich.jpg">
+<meta property="og:url" content="http://<?php echo $joe; >/index.php">
+<meta name="twitter:title" content="Joe Hettich's News Feeds | <?php echo $search; ?>">
+<meta name="twitter:description" content="Aggregate news feed batch search">
+<meta name="twitter:image" content="http://<?php echo $joe; >/joehettich.jpg">
+<meta name="twitter:card" content="news_feed_xml_rss">
+</head>
+<body>
+
+
+
+<html>
+<head>
+
+<meta property="og:title" content="European Travel Destinations">
+<meta property="og:description" content="Offering tour packages for individuals or groups.">
+<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+<meta property="og:url" content="http://euro-travel-example.com/index.htm">
+
 </head>
 <body>
 <table class="alternate_color">

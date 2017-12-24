@@ -13,8 +13,8 @@
 <form action="searchbody.php" style="width:100%;">
   Search:<input type="text" name="search" value="search">    
 <?php
-if(isset($_GET['date'])){
-$today = strip_tags(stripslashes($_GET['date']));
+if(isset($_GET['search'])){
+$search = strip_tags(stripslashes($_GET['search']));
 }
 else
 {
@@ -33,13 +33,12 @@ ini_set('max_input_time', 0);
 include('db.php');
 $conn = db_connect_scraper_100();
 $conn1 = db_connect_100();
-$conn2 = db_connect_100();
 
 $search = "";
 
 $i = 0;
 $c = 10;
-$e = 0;
+
 function strip_html_tags($str){
     $str = preg_replace(
         array(// Remove invisible content
@@ -58,7 +57,7 @@ $search = strip_tags(stripslashes($_GET['search']));
 }
 else
 {
-$search = 'blockchain';
+$search = 'artifical intelligence';
 }
 if(isset($_GET['page'])){
 $page = strip_tags(stripslashes($_GET['page']));
@@ -72,37 +71,25 @@ else
  $today = date('Y-m-d');
 }
 
-        $query1 = "SELECT DISTINCT `title`, `html`, `url`, `date` FROM `scraper`.`search` WHERE `search`.`date` = '".$today."';";
-echo $query1;
+        $query1 = "SELECT DISTINCT `title`, `html`, `url`, `date` FROM `scraper`.`search` WHERE `search`.`html` LIKE '%".$search."%' AND `search`.`date` = '".$today."';";
+//        $query1 = "SELECT DISTINCT `title`, `html`, `url`, `date` FROM `scraper`.`search` WHERE `search`.`date` = '".$today."';";
+
         if ($stmt1 = mysqli_prepare($conn1, $query1)) {
                         mysqli_stmt_execute($stmt1);
                 mysqli_stmt_bind_result($stmt1, $title, $body, $key, $date);
                 while (mysqli_stmt_fetch($stmt1)) {
                 
 //$body = preg_replace("/<script\b[^>]*>(.*?)<\/script>/is", "", $body);
-$e = 0;
-$count = 0;
-$word = "";
-$snipe = "";
-$sort = array();
+
+$i = $i + 1;
 
 $body = html_entity_decode($body);
 $body = strip_html_tags($body);
 $body = strip_tags(stripslashes($body));
-$body = htmlentities($body);
+$body = htmlEntities($body);                
 
-        $query = "SELECT `name` FROM `scraper`.`seoterm`;";
-
-        if ($stmt = mysqli_prepare($conn2, $query)) {
-                mysqli_stmt_execute($stmt);
-                mysqli_stmt_bind_result($stmt, $search);
-                while (mysqli_stmt_fetch($stmt)) {
-
-$i = $i + 1;
 
 $counter = substr_count($body, $search);
-$count = $counter + $count;
-echo $count;
 
 $needle = $search;
 $lastPos = 0;
@@ -114,60 +101,45 @@ while (($lastPos = strpos($body, $needle, $lastPos))!== false) {
     $lastPos = $lastPos + strlen($needle);
 }
 
-if($counter < 1) {
-
-}
-else
-{
-$word = $word."&nbsp;".$search;
-$sort[$search] = $counter;
-
-//echo "<tr><td style='font-size:16px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$title."&nbsp;&nbsp;&nbsp;<a href='".$key."'>Link</a></td></tr>";
+echo "<tr><td style='font-size:16px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$title."&nbsp;&nbsp;&nbsp;<a href='".$key."'>Link</a></td></tr>";
 //echo "<td><textarea rows='10' cols='50'>".$body."</textarea></td>";
 // Displays 3 and 10
-//echo "<tr><td>";
+echo "<tr><td>";
 foreach ($positions as $value) {
         $pos1 = $value + 75;
         $pos2 = $value - 25;
         $snippet = substr($body, $pos2, 200);
-$e = $e + 1;
-$snipe = $snipe."&nbsp;".$snippet;
+	echo $snippet."<br>";
+}
 
-//echo $snippet."<br>";
+$query = "SELECT description FROM search WHERE MATCH(description) AGAINST('html' IN BOOLEAN MODE)";
+
+$query = "SELECT `urlcounter`, `title`, `url`, `host`, `seoterm`, `date` FROM `scraper`.`results` WHERE `results`.`converted` IS NULL limit 1;";
+
+if ($stmt = mysqli_prepare($conn1, $query)) {
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_bind_result($stmt, $urlcounter, $title, $url, $host, $seoterm, $date);
+    while (mysqli_stmt_fetch($stmt)) {
+
+    }
+    mysqli_stmt_close($stmt);
 }
-echo "</td></tr>";
-}
-//echo $i;
+
+
                 }
+                mysqli_stmt_close($stmt1);
         }      
        
-if($count < 40){
+       
+/*       
+http://www.talkstreamlive.com/player.htm?as=30944&s=19174&k=fd8ac18b-52a1-4ba0-bf46-93abcc28c93c
 
-}
-else
-{
-arsort($sort,1);
-$words =  "";
-
-foreach (array_keys($sort) as $val) {
-	$words = $words."&nbsp;".$val;
-}
-
-echo "<tr><td style='font-size:16px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$count."&nbsp;".$title."&nbsp;&nbsp;&nbsp;<a href='".$key."'>Link</a>&nbsp;<br>".$words."&nbsp;<br></td></tr>";
-}
-
-              }
-              /*
-6200353
-Verification Code: ECYip3lpa7zXFjy0dahhjrVCXEcl3rmNH8fKCAb5OTE10XCjQFVNdDmCkHj1E7of
-Access Mask: 4294967295
-
-//echo "<tr><td style='font-size:16px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$title."&nbsp;&nbsp;&nbsp;<a href='".$key.$e."'>Link</a></td></tr>";
-//echo "<td><textarea rows='10' cols='50'>".$body."</textarea></td>";
-// Displays 3 and 10
+http://gcnplayer.gcnlive.com:80/channel2-lo.mp3
+http://14623.live.streamtheworld.com:80/KSFOAM_SC
+http://crystalout.surfernetwork.com:8001/KLO_MP3
+*/
 
 
-}
 
 ?>
 </table>

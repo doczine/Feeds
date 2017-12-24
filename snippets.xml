@@ -1,0 +1,4496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<folders>
+    <folder>
+        <title>Ubuntu</title>
+        <snippets>
+            <snippet>
+                <title>sudo /etc/init.d/apache2 restart</title>
+                <content>sudo /etc/init.d/apache2 restart</content>
+            </snippet>
+            <snippet>
+                <title>bash file.sh &amp;&gt; /dev/null&amp;</title>
+                <content>bash /var/www/data/file.sh &amp;&gt; /dev/null&amp;</content>
+            </snippet>
+            <snippet>
+                <title>sudo /etc/init.d/mysql restart</title>
+                <content>sudo /etc/init.d/mysql restart</content>
+            </snippet>
+            <snippet>
+                <title>ssh-keygen -R server-name</title>
+                <content>ssh-keygen -R server-name</content>
+            </snippet>
+            <snippet>
+                <title>mount bigdata1</title>
+                <content>sudo mount bigdata1:/store /var/www/bigdata/1</content>
+            </snippet>
+            <snippet>
+                <title>mount bigdata2</title>
+                <content>sudo mount bigdata2:/store /var/www/bigdata/2</content>
+            </snippet>
+            <snippet>
+                <title>sudo rsync -avze ssh --exclude '/var/www/bigdata' --exclude '/var/www/ramdrive' --exclude 'ramdrive' --exclude 'bigdata' /var/www/ capstone@192.168.1.60:/var/www/</title>
+                <content>sudo rsync -avze ssh --exclude '/var/www/bigdata' --exclude '/var/www/ramdrive' --exclude 'ramdrive' --exclude 'bigdata' /var/www/ capstone@192.168.1.60:/var/www/</content>
+            </snippet>
+            <snippet>
+                <title>localtime 1</title>
+                <content>sudo rm /etc/localtime</content>
+            </snippet>
+            <snippet>
+                <title>localtime 2</title>
+                <content>sudo ln -s /usr/share/zoneinfo/PST8PDT /etc/localtime</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /etc/php5/apache2/php.ini</title>
+                <content>sudo nano /etc/php5/apache2/php.ini</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /var/log/apache2/error.log</title>
+                <content>sudo nano /var/log/apache2/error.log</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /etc/mysql/my.cnf</title>
+                <content>sudo nano /etc/mysql/my.cnf</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /etc/init.d/startup.sh</title>
+                <content>sudo nano /etc/init.d/startup.sh</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /var/www/file.sh</title>
+                <content>sudo nano /var/www/file.sh</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /etc/httpd/conf/httpd.conf</title>
+                <content>sudo nano /etc/httpd/conf/httpd.conf</content>
+            </snippet>
+            <snippet>
+                <title>sudo update-rc.d startup.sh defaults</title>
+                <content>sudo update-rc.d startup.sh defaults</content>
+            </snippet>
+            <snippet>
+                <title>sudo chmod a+rx /etc/init.d/startup.sh</title>
+                <content>sudo chmod a+rx /etc/init.d/startup.sh</content>
+            </snippet>
+            <snippet>
+                <title>startup.sh</title>
+                <content>#!/bin/sh
+	sudo mount bigdata1:/store /var/www/bigdata/1
+  sleep 5	
+	sudo mount bigdata2:/store /var/www/bigdata/2
+  sleep 5
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2  
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2                                       
+  bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+  sleep 2</content>
+            </snippet>
+            <snippet>
+                <title>sleep 1h; reboot</title>
+                <content>sleep 1h; reboot</content>
+            </snippet>
+            <snippet>
+                <title>sudo reboot</title>
+                <content>sudo reboot</content>
+            </snippet>
+            <snippet>
+                <title>ssh -v capstone@192.168.1.</title>
+                <content>ssh -v capstone@192.168.1.</content>
+            </snippet>
+            <snippet>
+                <title>ssh -v capstone@crawl60.doczine.com</title>
+                <content>ssh -v capstone@crawl60.doczine.com</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /var/www/.htaccess</title>
+                <content>sudo nano /var/www/.htaccess</content>
+            </snippet>
+            <snippet>
+                <title>modrewrite rules</title>
+                <content>RewriteEngine On
+RewriteRule ^([^/]*)\.html$ /viewer.php?doc=$1 [L]
+RewriteEngine On
+RewriteRule ^([^/]*)/([^/]*)\.html$ /convert.php?file=$1&amp;doc=$2 [L]
+</content>
+            </snippet>
+            <snippet>
+                <title>sudo chmod 777 -R </title>
+                <content>sudo chmod 777 -R </content>
+            </snippet>
+            <snippet>
+                <title>sudo chown -R www-data:www-data /var/www/ramdrive</title>
+                <content>sudo chown -R www-data:www-data /var/www/ramdrive</content>
+            </snippet>
+            <snippet>
+                <title>solr restart</title>
+                <content>solr restart
+cd /solr/example
+sudo bash start.sh</content>
+            </snippet>
+            <snippet>
+                <title>sudo apt-get remove grub-common</title>
+                <content>sudo apt-get remove grub-common</content>
+            </snippet>
+            <snippet>
+                <title>sudo apt-get install grub2-common</title>
+                <content>sudo apt-get install grub2-common</content>
+            </snippet>
+            <snippet>
+                <title>a.sh</title>
+                <content>apt-get -y update
+
+apt-get -y upgrade
+
+apt-get -y install build-essential
+
+apt-get -y install php-pear php5-dev apache2-threaded-dev
+
+pecl install apc
+
+apt-get -y install python-software-properties
+
+apt-get -y install openjdk-6-jdk
+
+apt-get -y install git
+
+apt-get -y install perl
+
+apt-get -y install imagemagick
+
+apt-get -y install gs
+
+add-apt-repository ppa:guilhem-fr/swftools
+
+apt-get update
+
+apt-get -y install swftools
+
+apt-get -y install rpm
+
+apt-get -y install poppler-utils
+
+apt-get -y install php5-curl
+
+apt-get -y install pdftk
+
+apt-get -y install htop
+
+apt-get -y install byobu
+
+apt-get -y install zip
+
+apt-get -y install nfs-common
+
+apt-get -y --purge remove grub-common
+
+apt-get -y install grub2-common </content>
+            </snippet>
+            <snippet>
+                <title>nano /etc/my.cnf</title>
+                <content>nano /etc/my.cnf</content>
+            </snippet>
+            <snippet>
+                <title>sudo bash /var/www/basher.sh</title>
+                <content>sudo bash /var/www/basher.sh</content>
+            </snippet>
+            <snippet>
+                <title>sudo rsync -avze ssh /var/www/asdf.txt capstone@192.168.1.100:/home/capstone/asdf.txt</title>
+                <content>sudo rsync -avze ssh /var/www/asdf.txt capstone@192.168.1.100:/home/capstone/asdf.txt</content>
+            </snippet>
+            <snippet>
+                <title>java -jar lsa.jar -d /var/www/bigdata/2/1376367026_0f3ffa58a8/fs04-05-001.txt -o text asdf.txt</title>
+                <content>java -jar lsa.jar -d /var/www/bigdata/2/1376367026_0f3ffa58a8/fs04-05-001.txt -o text asdf.txt</content>
+            </snippet>
+            <snippet>
+                <title>sudo java -server -Xmx2g -jar /var/www/random-indexing.jar --docFile=/var/www/bigdata/2/1376367026_0f3ffa58a8/fs04-05-001.txt -o text --threads=4 --verbose /var/www/asdf1.txt</title>
+                <content>sudo java -server -Xmx2g -jar /var/www/random-indexing.jar --docFile=/var/www/bigdata/2/1376367026_0f3ffa58a8/fs04-05-001.txt -o text --threads=4 --verbose /var/www/asdf1.txt</content>
+            </snippet>
+            <snippet>
+                <title>cd /usr/share/nginx/www/</title>
+                <content>cd /usr/share/nginx/www/</content>
+            </snippet>
+            <snippet>
+                <title>tar -zcvf www_1124_scraper.tar.gz /home/capstone/www_1124_scraper</title>
+                <content>tar -zcvf www_1124_scraper.tar.gz /home/capstone/www_1124_scraper</content>
+            </snippet>
+            <snippet>
+                <title>sudo pkill bash</title>
+                <content>sudo pkill bash</content>
+            </snippet>
+            <snippet>
+                <title>nano /etc/crontab</title>
+                <content>nano /etc/crontab</content>
+            </snippet>
+            <snippet>
+                <title>ps aux | grep pgpool</title>
+                <content>ps aux | grep pgpool</content>
+            </snippet>
+            <snippet>
+                <title>lsb_release -a</title>
+                <content>lsb_release -a</content>
+            </snippet>
+            <snippet>
+                <title>nano ~/.bash_history</title>
+                <content>nano ~/.bash_history</content>
+            </snippet>
+            <snippet>
+                <title>cat ~/.bash_history</title>
+                <content>cat ~/.bash_history</content>
+            </snippet>
+            <snippet>
+                <title>ssh -v randerson@67.90.82.54</title>
+                <content>ssh -v randerson@67.90.82.54</content>
+            </snippet>
+            <snippet>
+                <title>list current directory</title>
+                <content>pwd</content>
+            </snippet>
+            <snippet>
+                <title>grep -r "10.5.1.51" /var/www/</title>
+                <content>grep -r "10.5.1.51" /var/www/</content>
+            </snippet>
+            <snippet>
+                <title>.php line count by file</title>
+                <content>find . -name '*.php' | xargs wc -l</content>
+            </snippet>
+            <snippet>
+                <title>sudo chown apache:apache Sajax1.php</title>
+                <content>sudo chown apache:apache Sajax1.php</content>
+            </snippet>
+            <snippet>
+                <title>sudo make menuconfig</title>
+                <content>sudo make menuconfig</content>
+            </snippet>
+            <snippet>
+                <title>cat ~/.bash_history</title>
+                <content>cat ~/.bash_history</content>
+            </snippet>
+            <snippet>
+                <title>mysql -u root -piCe67DI5GF</title>
+                <content>mysql -u root -piCe67DI5GF</content>
+            </snippet>
+            <snippet>
+                <title>ssh -v root@162.243.135.71</title>
+                <content>ssh -v root@162.243.135.71</content>
+            </snippet>
+            <snippet>
+                <title>killall -KILL php-fpm</title>
+                <content>killall -KILL php-fpm</content>
+            </snippet>
+            <snippet>
+                <title>sudo /usr/lib/cgi-bin/awstats.pl -config=crackest.com -update</title>
+                <content>sudo /usr/lib/cgi-bin/awstats.pl -config=crackest.com -update</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /etc/awstats/awstats.crackest.com.conf</title>
+                <content>sudo nano /etc/awstats/awstats.crackest.com.conf</content>
+            </snippet>
+            <snippet>
+                <title>sudo /usr/lib/cgi-bin/awstats.pl -config=crackest.com -update</title>
+                <content>sudo /usr/lib/cgi-bin/awstats.pl -config=crackest.com -update</content>
+            </snippet>
+            <snippet>
+                <title>sudo service apache2 restart</title>
+                <content>sudo service apache2 restart</content>
+            </snippet>
+            <snippet>
+                <title>mysql -u root -piCe67DI5GF scraper</title>
+                <content>mysql -u root -piCe67DI5GF scraper</content>
+            </snippet>
+            <snippet>
+                <title>LC_ALL=C sort -t, -k3 vectorize.csv &gt; sorted.csv</title>
+                <content>LC_ALL=C sort -t, -k3 vectorize.csv &gt; sorted.csv</content>
+            </snippet>
+            <snippet>
+                <title>/home/solr-5.3.0 # bin/solr start -p 8080 -s "example/techproducts/solr"</title>
+                <content>/home/solr-5.3.0 # bin/solr start -p 8080 -s "example/techproducts/solr"</content>
+            </snippet>
+            <snippet>
+                <title>/home/solr-5.2.1 # bin/solr -e techproducts -p 8080</title>
+                <content>/home/solr-5.2.1 # bin/solr -e techproducts -p 8080</content>
+            </snippet>
+            <snippet>
+                <title>7s3@rch123</title>
+                <content>7s3@rch123</content>
+            </snippet>
+            <snippet>
+                <title>ID: 4QCi90GOPpBW
+Key: 1c7d4df9f94d263f18a91b5aa73d0cb1</title>
+                <content>ID: 4QCi90GOPpBW
+Key: 1c7d4df9f94d263f18a91b5aa73d0cb1</content>
+            </snippet>
+            <snippet>
+                <title>http://kfi-am.akacast.akamaistream.net/7/121/19771/v1/auth.akacast.akamaistream.net/kfi-am.m3u</title>
+                <content>http://kfi-am.akacast.akamaistream.net/7/121/19771/v1/auth.akacast.akamaistream.net/kfi-am.m3u</content>
+            </snippet>
+            <snippet>
+                <title>bin/solr start -e techproducts -p 8080 -Dsolr.clustering.enabled=true</title>
+                <content>bin/solr start -e techproducts -p 8080 -Dsolr.clustering.enabled=true</content>
+            </snippet>
+            <snippet>
+                <title>/home/solr-5.2.1/bin/solr start -e techproducts -p 8080 -Dsolr.clustering.enabled=true</title>
+                <content>/home/solr-5.2.1/bin/solr start -e techproducts -p 8080 -Dsolr.clustering.enabled=true</content>
+            </snippet>
+            <snippet>
+                <title>usewithtor lynx http://xmh57jrzrnw6insl.onion/</title>
+                <content>usewithtor lynx http://xmh57jrzrnw6insl.onion/</content>
+            </snippet>
+            <snippet>
+                <title>sync &amp;&amp; echo 3 | sudo tee /proc/sys/vm/drop_caches</title>
+                <content>sync &amp;&amp; echo 3 | sudo tee /proc/sys/vm/drop_caches</content>
+            </snippet>
+            <snippet>
+                <title>grep -r "Original XML Source" &gt; xml.txt</title>
+                <content>grep -r "Original XML Source" &gt; xml.txt</content>
+            </snippet>
+            <snippet>
+                <title>cat xml.txt | grep -o -E 'href="([^"#]+)"' | cut -d'"' -f2 | sort | uniq</title>
+                <content>cat xml.txt | grep -o -E 'href="([^"#]+)"' | cut -d'"' -f2 | sort | uniq</content>
+            </snippet>
+            <snippet>
+                <title>grep -r "feedurl" &gt; url.txt</title>
+                <content>grep -r "feedurl" &gt; url.txt</content>
+            </snippet>
+            <snippet>
+                <title>grep -r ".rdf" &gt; url_rdf.txt</title>
+                <content>grep -r ".rdf" &gt; url_rdf.txt</content>
+            </snippet>
+            <snippet>
+                <title>grep -o 'http://[a-zA-Z.-]*/[a-zA-Z0-9+-]*/[a-zA-Z0-9.,-+]*' url.txt</title>
+                <content>grep -o 'http://[a-zA-Z.-]*/[a-zA-Z0-9+-]*/[a-zA-Z0-9.,-+]*' url.txt</content>
+            </snippet>
+            <snippet>
+                <title>curl 'http://localhost:8080/solr/techproducts/update/extract?literal.id=12344321&amp;commit=true' -F 'myfile=@/var/www/html/search/test.html'</title>
+                <content>curl 'http://localhost:8080/solr/techproducts/update/extract?literal.id=12344321&amp;commit=true' -F 'myfile=@/var/www/html/search/test.html'</content>
+            </snippet>
+            <snippet>
+                <title>bash /var/www/html/rss/rss.sh</title>
+                <content>bash /var/www/html/rss/rss.sh</content>
+            </snippet>
+            <snippet>
+                <title>bash /var/www/rss/rss_url.sh</title>
+                <content>bash /var/www/rss/rss_url.sh</content>
+            </snippet>
+            <snippet>
+                <title>bash /var/www/html/rss/rss_solr.sh</title>
+                <content>bash /var/www/html/rss/rss_solr.sh</content>
+            </snippet>
+            <snippet>
+                <title>bash /var/www/html/archive/rss.sh</title>
+                <content>bash /var/www/html/archive/rss.sh</content>
+            </snippet>
+            <snippet>
+                <title>bash /var/www/html/solr/php_link_finder.sh</title>
+                <content>bash /var/www/html/solr/php_link_finder.sh</content>
+            </snippet>
+            <snippet>
+                <title>bash /var/www/rss/rss.sh</title>
+                <content>bash /var/www/rss/rss.sh</content>
+            </snippet>
+            <snippet>
+                <title>bash /var/www/rss/rss_scraper_feedage_scrape.sh</title>
+                <content>bash /var/www/rss/rss_scraper_feedage_scrape.sh</content>
+            </snippet>
+            <snippet>
+                <title>php -f /var/www/rss/rss_scraper_feedage.php</title>
+                <content>php -f /var/www/rss/rss_scraper_feedage.php</content>
+            </snippet>
+            <snippet>
+                <title>bash /var/www/html/archive/php_link_finder.sh</title>
+                <content>bash /var/www/html/archive/php_link_finder.sh</content>
+            </snippet>
+            <snippet>
+                <title>ls -1  | wc -l</title>
+                <content>ls -1  | wc -l</content>
+            </snippet>
+            <snippet>
+                <title>ls -lt --ignore="*.html" </title>
+                <content>ls -lt --ignore="*.html" </content>
+            </snippet>
+            <snippet>
+                <title>ls -lt *.sh *.php --ignore="*.html"</title>
+                <content>ls -lt *.sh *.php --ignore="*.html"</content>
+            </snippet>
+            <snippet>
+                <title>sudo service mongod start</title>
+                <content>sudo service mongod start</content>
+            </snippet>
+            <snippet>
+                <title>178.63.17.130</title>
+                <content>178.63.17.130</content>
+            </snippet>
+            <snippet>
+                <title>78.47.16.4</title>
+                <content>78.47.16.4</content>
+            </snippet>
+            <snippet>
+                <title>cat /var/mail/root</title>
+                <content>cat /var/mail/root</content>
+            </snippet>
+            <snippet>
+                <title>sshfs root@178.63.17.130:/var/www/html /Users/computer/Documents/ssh3</title>
+                <content>sshfs root@178.63.17.130:/var/www/html /Users/computer/Documents/ssh3</content>
+            </snippet>
+            <snippet>
+                <title>sshfs root@78.47.16.4:/home/mp3/stream /Users/computer/Documents/ssh5</title>
+                <content>sshfs root@78.47.16.4:/home/mp3/stream /Users/computer/Documents/ssh5</content>
+            </snippet>
+            <snippet>
+                <title>find /home/stream ! -newermt "May 24" -type f -print0 | xargs -0 rm</title>
+                <content>find /home/stream ! -newermt "May 24" -type f -print0 | xargs -0 rm</content>
+            </snippet>
+            <snippet>
+                <title>sudo /usr/lib/cgi-bin/awstats.pl -config=audio.pink -update</title>
+                <content>sudo /usr/lib/cgi-bin/awstats.pl -config=audio.pink -update</content>
+            </snippet>
+            <snippet>
+                <title>90 tb beast</title>
+                <content>138.201.68.139</content>
+            </snippet>
+            <snippet>
+                <title>nano /etc/mysql/mysql.conf.d/mysqld.cnf</title>
+                <content>nano /etc/mysql/mysql.conf.d/mysqld.cnf</content>
+            </snippet>
+            <snippet>
+                <title>nano /etc/mysql/my.cnf</title>
+                <content>nano /etc/mysql/my.cnf</content>
+            </snippet>
+            <snippet>
+                <title>ls -lt --block-size=M</title>
+                <content>ls -lt --block-size=M</content>
+            </snippet>
+            <snippet>
+                <title>du -sh /*</title>
+                <content>du -sh /*</content>
+            </snippet>
+            <snippet>
+                <title>sudo bash -c 'echo &gt; /var/log/apache2/error.log'
+</title>
+                <content>sudo bash -c 'echo &gt; /var/log/apache2/error.log'</content>
+            </snippet>
+            <snippet>
+                <title>sudo /usr/lib/cgi-bin/awstats.pl -config=wormholed.com -update</title>
+                <content>sudo /usr/lib/cgi-bin/awstats.pl -config=wormholed.com -update</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /etc/awstats/awstats.wormholed.com.conf</title>
+                <content>sudo nano /etc/awstats/awstats.wormholed.com.conf</content>
+            </snippet>
+            <snippet>
+                <title>ssd search server</title>
+                <content>88.198.65.4</content>
+            </snippet>
+            <snippet>
+                <title>/opt/solr/bin/solr -e techproducts -m 32g</title>
+                <content>/opt/solr/bin/solr -e techproducts -m 32g</content>
+            </snippet>
+            <snippet>
+                <title>kill $(ps aux | grep '[p]hp' | awk '{print $2}')</title>
+                <content>kill $(ps aux | grep '[p]hp' | awk '{print $2}')</content>
+            </snippet>
+            <snippet>
+                <title>rss server</title>
+                <content>176.9.83.132</content>
+            </snippet>
+            <snippet>
+                <title>nano /etc/mysql/mysql.cnf</title>
+                <content>nano /etc/mysql/mysql.cnf</content>
+            </snippet>
+            <snippet>
+                <title>grep -r '.xml' /var/www/html/feedage</title>
+                <content>grep -r '.xml' /var/www/html/feedage</content>
+            </snippet>
+            <snippet>
+                <title>sudo apt-get install software-properties-common</title>
+                <content>sudo apt-get install software-properties-common</content>
+            </snippet>
+            <snippet>
+                <title>3 TB search</title>
+                <content>176.9.70.122</content>
+            </snippet>
+            <snippet>
+                <title>rsync -avWI -R /home/ root@176.9.70.122:/home/rsync</title>
+                <content>rsync -avWI -R /home/ root@176.9.70.122:/home/rsync</content>
+            </snippet>
+            <snippet>
+                <title>sudo rkhunter -c --enable all --disable none</title>
+                <content>sudo rkhunter -c --enable all --disable none</content>
+            </snippet>
+            <snippet>
+                <title>/opt/solr/bin/post -c techproducts -filetypes "*" /home/rsync/home</title>
+                <content>/opt/solr/bin/post -c techproducts -filetypes "*" /home/rsync/home</content>
+            </snippet>
+            <snippet>
+                <title>/opt/solr/bin/solr -e techproducts -p 8080 -m 32g</title>
+                <content>/opt/solr/bin/solr -e techproducts -p 8080 -m 32g</content>
+            </snippet>
+            <snippet>
+                <title>streamripper</title>
+                <content>88.99.0.112</content>
+            </snippet>
+            <snippet>
+                <title>88.99.66.105</title>
+                <content>88.99.66.105</content>
+            </snippet>
+            <snippet>
+                <title>echo */ | wc</title>
+                <content>echo */ | wc</content>
+            </snippet>
+            <snippet>
+                <title>sudo /usr/lib/cgi-bin/awstats.pl -config=crackest.com -update</title>
+                <content>sudo /usr/lib/cgi-bin/awstats.pl -config=crackest.com -update</content>
+            </snippet>
+            <snippet>
+                <title>88.99.162.228</title>
+                <content>88.99.162.228</content>
+            </snippet>
+            <snippet>
+                <title>148.251.237.42</title>
+                <content>148.251.237.42</content>
+            </snippet>
+            <snippet>
+                <title>export VISUAL=nano; crontab -e
+</title>
+                <content>export VISUAL=nano; crontab -e
+</content>
+            </snippet>
+            <snippet>
+                <title>88.99.139.157</title>
+                <content>88.99.139.157</content>
+            </snippet>
+            <snippet>
+                <title>streamripper http://twit.am/listen -r 8004</title>
+                <content>streamripper http://twit.am/listen -r 8004</content>
+            </snippet>
+            <snippet>
+                <title>rsync --remove-source-files -avzer /var/www/html/rss /var/www/html/drive/rss</title>
+                <content>rsync --remove-source-files -avzer /var/www/html/rss /var/www/html/drive/rss</content>
+            </snippet>
+            <snippet>
+                <title>grep -r -E -o ".{0,100}bitcoin.{0,100}" &gt; /var/www/html/drive/search/2017-04-20/bitcoint.txt</title>
+                <content>grep -r -E -o ".{0,100}bitcoin.{0,100}" &gt; /var/www/html/drive/search/2017-04-20/bitcoint.txt</content>
+            </snippet>
+            <snippet>
+                <title>mount -t tmpfs -o size=2000m tmpfs /mnt/ramdisk</title>
+                <content>mount -t tmpfs -o size=2000m tmpfs /mnt/ramdisk</content>
+            </snippet>
+            <snippet>
+                <title>/opt/solr/bin/solr start -force -p 8983 -s "/opt/solr/example/techproducts/solr"</title>
+                <content>/opt/solr/bin/solr start -force -p 8983 -s "/opt/solr/example/techproducts/solr"</content>
+            </snippet>
+            <snippet>
+                <title>find / -xdev -type f -size +100M</title>
+                <content>find / -xdev -type f -size +100M</content>
+            </snippet>
+            <snippet>
+                <title>tune2fs -m 0 /dev/md2</title>
+                <content>tune2fs -m 0 /dev/md2</content>
+            </snippet>
+            <snippet>
+                <title>du -s *|awk '{ if ($1 &gt; 3000) print }'</title>
+                <content>du -s *|awk '{ if ($1 &gt; 3000) print }'</content>
+            </snippet>
+            <snippet>
+                <title>sshfs -o nonempty root@88.99.139.157:/home/file /home/remote/file</title>
+                <content>sshfs -o nonempty root@88.99.139.157:/home/file /home/remote/file</content>
+            </snippet>
+            <snippet>
+                <title>sshfs -o nonempty root@88.99.139.157:/home/rss /home/remote/rss</title>
+                <content>sshfs -o nonempty root@88.99.139.157:/home/rss /home/remote/rss</content>
+            </snippet>
+            <snippet>
+                <title>148.251.42.190</title>
+                <content>148.251.42.190</content>
+            </snippet>
+            <snippet>
+                <title>/etc/apache2/sites-available/000-default.conf</title>
+                <content>/etc/apache2/sites-available/000-default.conf</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /etc/awstats/awstats.borgeye.com.conf</title>
+                <content>sudo nano /etc/awstats/awstats.borgeye.com.conf</content>
+            </snippet>
+            <snippet>
+                <title>sudo /usr/lib/cgi-bin/awstats.pl -config=borgeye.com -update </title>
+                <content>sudo /usr/lib/cgi-bin/awstats.pl -config=borgeye.com -update </content>
+            </snippet>
+            <snippet>
+                <title>export VISUAL=nano; crontab -e</title>
+                <content>export VISUAL=nano; crontab -e</content>
+            </snippet>
+            <snippet>
+                <title>ps aux | grep .php | wc -l</title>
+                <content>ps aux | grep .php | wc -l</content>
+            </snippet>
+            <snippet>
+                <title>scp /var/www/2017-08-01.sql root@138.201.224.77:/home/2017-08-01.sql</title>
+                <content>scp /var/www/2017-08-01.sql root@138.201.224.77:/home/2017-08-01.sql</content>
+            </snippet>
+            <snippet>
+                <title>mysqldump -u root -p3h4xb0011011001tCiK scraper rss_xml_parse --where="timestamp BETW
+EEN '2017-07-13' and '2017-07-14'</title>
+                <content>mysqldump -u root -p3h4xb0011011001tCiK scraper rss_xml_parse --where="timestamp BETW
+EEN '2017-07-13' and '2017-07-14'</content>
+            </snippet>
+            <snippet>
+                <title>scp -r /var/www/html/search/2017-08-09 root@148.251.42.190:/var/www/html/search/</title>
+                <content>scp -r /var/www/html/search/2017-08-09 root@148.251.42.190:/var/www/html/search/</content>
+            </snippet>
+            <snippet>
+                <title>scp -r /var/www/html/2017-08-09.sql root@148.251.42.190:/home/</title>
+                <content>scp -r /var/www/html/2017-08-09.sql root@148.251.42.190:/home/</content>
+            </snippet>
+            <snippet>
+                <title>split --bytes 500M --numeric-suffixes --suffix-length=3 foo foo</title>
+                <content>split --bytes 100M --numeric-suffixes --suffix-length=3 foo foo</content>
+            </snippet>
+            <snippet>
+                <title>ssh -v root@148.251.42.190</title>
+                <content>ssh -v root@148.251.42.190</content>
+            </snippet>
+            <snippet>
+                <title>ssh -v root@138.201.224.77</title>
+                <content>ssh -v root@138.201.224.77</content>
+            </snippet>
+            <snippet>
+                <title>136.243.12.135</title>
+                <content>136.243.12.135</content>
+            </snippet>
+            <snippet>
+                <title>streamripper http://playerservices.streamtheworld.com/api/livestream-redirect/KSFOAM_SC -r 8001</title>
+                <content>streamripper http://playerservices.streamtheworld.com/api/livestream-redirect/KSFOAM_SC -r 8001</content>
+            </snippet>
+            <snippet>
+                <title>RewriteEngine On
+ErrorDocument 404 /index.php</title>
+                <content>RewriteEngine On
+ErrorDocument 404 /index.php</content>
+            </snippet>
+            <snippet>
+                <title>&lt;Directory /var/www/&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+&lt;/Directory&gt;</title>
+                <content>&lt;Directory /var/www/&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+&lt;/Directory&gt;</content>
+            </snippet>
+            <snippet>
+                <title>/etc/apache2/sites-available/default</title>
+                <content>/etc/apache2/sites-available/default</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /etc/awstats/awstats.feeds.blue.conf</title>
+                <content>sudo nano /etc/awstats/awstats.feeds.blue.conf</content>
+            </snippet>
+            <snippet>
+                <title>https://websiteforstudents.com/setting-ssltls-apache2-ubuntu-17-04/</title>
+                <content>https://websiteforstudents.com/setting-ssltls-apache2-ubuntu-17-04/</content>
+            </snippet>
+            <snippet>
+                <title>split file.txt -d -b 100M parts</title>
+                <content>split file.txt -d -b 100M parts</content>
+            </snippet>
+            <snippet>
+                <title>ls -l --block-size=M</title>
+                <content>ls -l --block-size=M</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>FreeBSD</title>
+        <snippets>
+            <snippet>
+                <title>make install clean</title>
+                <content>make install clean</content>
+            </snippet>
+            <snippet>
+                <title>freshports.org</title>
+                <content>freshports.org</content>
+            </snippet>
+            <snippet>
+                <title>cd /usr/ports/editors/nano/</title>
+                <content>cd /usr/ports/editors/nano/</content>
+            </snippet>
+            <snippet>
+                <title>/usr/local/etc/rc.d/apache22 restart</title>
+                <content>/usr/local/etc/rc.d/apache22 restart</content>
+            </snippet>
+            <snippet>
+                <title>nano /usr/local/etc/apache22/httpd.conf</title>
+                <content>nano /usr/local/etc/apache22/httpd.conf</content>
+            </snippet>
+            <snippet>
+                <title>cd /usr/local/www/apache22/data</title>
+                <content>cd /usr/local/www/apache22/data</content>
+            </snippet>
+            <snippet>
+                <title>/usr/local/etc/rc.d/mysql-server restart</title>
+                <content>/usr/local/etc/rc.d/mysql-server restart</content>
+            </snippet>
+            <snippet>
+                <title>nano /usr/local/etc/my.cnf</title>
+                <content>nano /usr/local/etc/my.cnf</content>
+            </snippet>
+            <snippet>
+                <title>find / -name my.cnf</title>
+                <content>find / -name my.cnf</content>
+            </snippet>
+            <snippet>
+                <title>pv -i 1 -p -t -e /var/www/xah.sql | mysql -u root -p docunator</title>
+                <content>pv -i 1 -p -t -e /var/www/xah.sql | mysql -u root -p docunator</content>
+            </snippet>
+            <snippet>
+                <title>pv -i 1 -p -t -e /var/www/mysqldumper/work/backup/xbc.sql | mysql -u root -p docunator</title>
+                <content>pv -i 1 -p -t -e /var/www/mysqldumper/work/backup/xbc.sql | mysql -u root -p docunator</content>
+            </snippet>
+            <snippet>
+                <title>pkg_version -v reports</title>
+                <content>pkg_version -v reports
+</content>
+            </snippet>
+            <snippet>
+                <title>pkg_add -r portupgrade</title>
+                <content>pkg_add -r portupgrade</content>
+            </snippet>
+            <snippet>
+                <title>cd /root/carrot</title>
+                <content>cd /root/carrot</content>
+            </snippet>
+            <snippet>
+                <title>rm newest.xml
+fetch 'http://localhost/newest.xml' &gt; newest.xml
+iconv -c -t utf-8 &lt; newest.xml &gt; newest1.xml
+sh batch.sh newest1.xml -a lingo -v</title>
+                <content>rm newest.xml
+fetch 'http://localhost/newest.xml' &gt; newest.xml
+iconv -c -t utf-8 &lt; newest.xml &gt; newest1.xml
+sh batch.sh newest1.xml -a lingo -v</content>
+            </snippet>
+            <snippet>
+                <title>Mount 1</title>
+                <content>mount 192.168.1.101:/store /usr/local/www/apache22/data/bigdata/1</content>
+            </snippet>
+            <snippet>
+                <title>Mount 2</title>
+                <content>mount 192.168.1.102:/store /usr/local/www/apache22/data/bigdata/2</content>
+            </snippet>
+            <snippet>
+                <title>Mount.sh</title>
+                <content>bash /root/mount.sh</content>
+            </snippet>
+            <snippet>
+                <title>Awstats SH</title>
+                <content>cd /home/capstone
+bash stats.sh</content>
+            </snippet>
+            <snippet>
+                <title>bash /usr/local/www/apache22/data/file.sh</title>
+                <content>bash /usr/local/www/apache22/data/file.sh</content>
+            </snippet>
+            <snippet>
+                <title>nano /var/log/httpd-access.log</title>
+                <content>nano /var/log/httpd-access.log</content>
+            </snippet>
+            <snippet>
+                <title>nano /var/log/httpd-error.log</title>
+                <content>nano /var/log/httpd-error.log</content>
+            </snippet>
+            <snippet>
+                <title>cut -d'"' -f4 /home/capstone/log/httpd-access.log | grep -v '^-$' | grep -v '^google.com' | sort | uniq -c | sort -rg &gt; google-search.txt</title>
+                <content>cut -d'"' -f4 /home/capstone/log/httpd-access.log | grep -v '^-$' | grep -v '^google.com' | sort | uniq -c | sort -rg &gt; google-search.txt</content>
+            </snippet>
+            <snippet>
+                <title>awk '/beginchar/,/endchar/' httpd-access.log &gt; oneborg.txt</title>
+                <content>awk '/beginchar/,/endchar/' httpd-access.log &gt; oneborg.txt</content>
+            </snippet>
+            <snippet>
+                <title>awk '/q=/,/&amp;/' httpd-access.log</title>
+                <content>awk '/q=/,/&amp;/' httpd-access.log</content>
+            </snippet>
+            <snippet>
+                <title>awk '/category_list.php/,/1/' httpd-access.log &gt; category-list-counts.txt</title>
+                <content>awk '/category_list.php/,/1/' httpd-access.log &gt; category-list-counts.txt</content>
+            </snippet>
+            <snippet>
+                <title>nano /usr/local/etc/php.ini</title>
+                <content>nano /usr/local/etc/php.ini</content>
+            </snippet>
+            <snippet>
+                <title>rsync -avze ssh --exclude '/usr/local/www/apache22/data/bigdata' --exclude 'bigdata' --exclude 'ramdrive' /usr/local/www/apache22/data capstone@192.168.1.67:/var/www
+</title>
+                <content>rsync -avze ssh --exclude '/usr/local/www/apache22/data/bigdata' --exclude 'bigdata' --exclude 'ramdrive' /usr/local/www/apache22/data capstone@192.168.1.67:/var/www</content>
+            </snippet>
+            <snippet>
+                <title>php -f /usr/local/www/apache22/data/regex_between.php</title>
+                <content>php -f /usr/local/www/apache22/data/regex_between.php</content>
+            </snippet>
+            <snippet>
+                <title>cp /var/log/httpd-access.log /usr/home/capstone/httpd-access.log</title>
+                <content>cp /var/log/httpd-access.log /usr/home/capstone/httpd-access.log</content>
+            </snippet>
+            <snippet>
+                <title>awk '/q=/,/&amp;/' /usr/home/capstone/httpd-access.log &gt; /usr/home/capstone/search-terms.txt</title>
+                <content>awk '/q=/,/&amp;/' /usr/home/capstone/httpd-access.log &gt; /usr/home/capstone/search-terms.txt</content>
+            </snippet>
+            <snippet>
+                <title>awk '{gsub("192.168", "");print}' 200.txt &gt; expo.txt</title>
+                <content>awk '{gsub("192.168", "");print}' 200.txt &gt; expo.txt</content>
+            </snippet>
+            <snippet>
+                <title>cut -d'"' -f4 httpd-access.log | grep -v '^ 200 ' | sort | uniq -c | sort -rg &gt; google-searchadf.txt</title>
+                <content>cut -d'"' -f4 httpd-access.log | grep -v '^ 200 ' | sort | uniq -c | sort -rg &gt; google-searchadf.txt</content>
+            </snippet>
+            <snippet>
+                <title>php /usr/local/www/apache22/data/mysql_httpd_log_import.php -h localhost -d logs -t logdata -u docunator -p X23n7dkpP42x7M4LH -c &lt; /usr/home/capstone/httpd-access.log</title>
+                <content>php /usr/local/www/apache22/data/mysql_httpd_log_import.php -h localhost -d logs -t logdata -u docunator -p X23n7dkpP42x7M4LH -c &lt; /usr/home/capstone/httpd-access.log</content>
+            </snippet>
+            <snippet>
+                <title>\</title>
+                <content>\</content>
+            </snippet>
+            <snippet>
+                <title>|</title>
+                <content>|</content>
+            </snippet>
+            <snippet>
+                <title>rm -r /folder/</title>
+                <content>rm -r /folder/</content>
+            </snippet>
+            <snippet>
+                <title>chmod -R 777 ramdrive</title>
+                <content>chmod -R 777 ramdrive</content>
+            </snippet>
+            <snippet>
+                <title>gstat</title>
+                <content>gstat</content>
+            </snippet>
+            <snippet>
+                <title>iostat -w 1 da0 da1
+</title>
+                <content>iostat -w 1 da0 da1
+</content>
+            </snippet>
+            <snippet>
+                <title>nfsstat</title>
+                <content>nfsstat</content>
+            </snippet>
+            <snippet>
+                <title>rsync -avze ssh /home/capstone/lsa.jar capstone@192.168.1.62:/var/www/lsa.jar</title>
+                <content>rsync -avze ssh /home/capstone/lsa.jar capstone@192.168.1.62:/var/www/lsa.jar</content>
+            </snippet>
+            <snippet>
+                <title>/usr/local/www/apache22/data/berkeley/graduation_forms</title>
+                <content>/usr/local/www/apache22/data/berkeley/graduation_forms</content>
+            </snippet>
+            <snippet>
+                <title>rsync -avze ssh /home/capstone/MLIB capstone@192.168.1.62:/home/capstone/bdas/MLIB</title>
+                <content>rsync -avze ssh /home/capstone/MLIB capstone@192.168.1.62:/home/capstone/bdas/MLIB</content>
+            </snippet>
+            <snippet>
+                <title>bash curl3.sh</title>
+                <content>bash curl3.sh</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>Pass</title>
+        <snippets>
+            <snippet>
+                <title>QOW923$0</title>
+                <content>QOW923$0</content>
+            </snippet>
+            <snippet>
+                <title>aZXCVJKL7890eqr</title>
+                <content>aZXCVJKL7890eqr</content>
+            </snippet>
+            <snippet>
+                <title>aZXbdzfL7890asdf</title>
+                <content>aZXbdzfL7890asdf</content>
+            </snippet>
+            <snippet>
+                <title>fjaowi#8239</title>
+                <content>fjaowi#8239</content>
+            </snippet>
+            <snippet>
+                <title>DJ30ji12301!</title>
+                <content>DJ30ji12301!</content>
+            </snippet>
+            <snippet>
+                <title>fjkCL39@#dk1</title>
+                <content>fjkCL39@#dk1
+</content>
+            </snippet>
+            <snippet>
+                <title>ABOT9398!@4</title>
+                <content>ABOT9398!@4</content>
+            </snippet>
+            <snippet>
+                <title>fJi3402:03#</title>
+                <content>fJi3402:03#</content>
+            </snippet>
+            <snippet>
+                <title>kype</title>
+                <content>Fjksskyp932#$</content>
+            </snippet>
+            <snippet>
+                <title>fkitn84#1H</title>
+                <content>fkitn84#1H</content>
+            </snippet>
+            <snippet>
+                <title>fhjCLR2938#</title>
+                <content>fhjCLR2938#</content>
+            </snippet>
+            <snippet>
+                <title>girvpN39(!1</title>
+                <content>girvpN39(!1</content>
+            </snippet>
+            <snippet>
+                <title>fJiO9air$950</title>
+                <content>fjie9air$950</content>
+            </snippet>
+            <snippet>
+                <title>appid</title>
+                <content>$RT1Appid1590</content>
+            </snippet>
+            <snippet>
+                <title>local</title>
+                <content>#$%AdminNV19</content>
+            </snippet>
+            <snippet>
+                <title>549%#BLuj234</title>
+                <content>549%#BLuj234</content>
+            </snippet>
+            <snippet>
+                <title>&amp;*(AdminNV19</title>
+                <content>&amp;*(AdminNV19</content>
+            </snippet>
+            <snippet>
+                <title>ebt129JR</title>
+                <content>eRt129JRa</content>
+            </snippet>
+            <snippet>
+                <title>macadmin lap pass</title>
+                <content>h3ll0k1tty</content>
+            </snippet>
+            <snippet>
+                <title>Newport91915</title>
+                <content>Newport91915</content>
+            </snippet>
+            <snippet>
+                <title>fj(30dmOod3</title>
+                <content>fj(30dmOod3</content>
+            </snippet>
+            <snippet>
+                <title>#$%AdminNV19</title>
+                <content>#$%AdminNV19</content>
+            </snippet>
+            <snippet>
+                <title>air bears jh</title>
+                <content>j.8vlvx2</content>
+            </snippet>
+            <snippet>
+                <title>X23n7dkpP42x7M4LH</title>
+                <content>X23n7dkpP42x7M4LH</content>
+            </snippet>
+            <snippet>
+                <title>4sql-dev!</title>
+                <content>4sql-dev!</content>
+            </snippet>
+            <snippet>
+                <title>Zoologicalh8t3rl8t3r123</title>
+                <content>Zoologicalh8t3rl8t3r123</content>
+            </snippet>
+            <snippet>
+                <title>joe@scanregister.com 2h3%eDn%</title>
+                <content>joe@scanregister.com 2h3%eDn%</content>
+            </snippet>
+            <snippet>
+                <title>tom@scanregister.com 9K4j5=TJ</title>
+                <content>tom@scanregister.com 9K4j5=TJ</content>
+            </snippet>
+            <snippet>
+                <title>a!ZXCVJKL7890
+</title>
+                <content>a!ZXCVJKL7890
+</content>
+            </snippet>
+            <snippet>
+                <title>aZXCVJKL7890</title>
+                <content>aZXCVJKL7890</content>
+            </snippet>
+            <snippet>
+                <title>aZXCVJKL7890eqr - email
+</title>
+                <content>aZXCVJKL7890eqr - email
+</content>
+            </snippet>
+            <snippet>
+                <title>aZXbdzfL7890asdf</title>
+                <content>aZXbdzfL7890asdf</content>
+            </snippet>
+            <snippet>
+                <title>reterprox DJ30ji12301!
+</title>
+                <content>reterprox DJ30ji12301!
+</content>
+            </snippet>
+            <snippet>
+                <title>204.77.0.178
+joe1
+KOALA12</title>
+                <content>204.77.0.178
+joe1
+KOALA12</content>
+            </snippet>
+            <snippet>
+                <title>#$%AdminNV18conf</title>
+                <content>#$%AdminNV18conf</content>
+            </snippet>
+            <snippet>
+                <title>fnjI3^*jfibr</title>
+                <content>fnjI3^*jfibr</content>
+            </snippet>
+            <snippet>
+                <title>t30975hjT sq</title>
+                <content>t30975hjT</content>
+            </snippet>
+            <snippet>
+                <title>f4i2&amp;30usrvo590</title>
+                <content>f4i2&amp;30usrvo590</content>
+            </snippet>
+            <snippet>
+                <title>fjdjSeta23#4</title>
+                <content>fjdjSeta23#4</content>
+            </snippet>
+            <snippet>
+                <title>dkjUcP1228</title>
+                <content>dkjUcP12$28</content>
+            </snippet>
+            <snippet>
+                <title>ucp3ewrdie9</title>
+                <content>ucp3ewrdie9</content>
+            </snippet>
+            <snippet>
+                <title>fi20fgrnDtmO</title>
+                <content>fi20fgrnDtmO</content>
+            </snippet>
+            <snippet>
+                <title>fi20foneDtmOmaiden</title>
+                <content>fi20foneDtmO</content>
+            </snippet>
+            <snippet>
+                <title>fi20ftwoDtmOcar</title>
+                <content>fi20ftwoDtmO</content>
+            </snippet>
+            <snippet>
+                <title>fi20fgrnDtmOborn</title>
+                <content>fi20fgrnDtmOborn</content>
+            </snippet>
+            <snippet>
+                <title>efjoFeD03l0a@#</title>
+                <content>efjoFeD03l0a@#</content>
+            </snippet>
+            <snippet>
+                <title>dfjlkaTh3mfor!</title>
+                <content>dfjlkaTh3mfor!</content>
+            </snippet>
+            <snippet>
+                <title>dZ0ra@c12f</title>
+                <content>dZ0ra@c12f</content>
+            </snippet>
+            <snippet>
+                <title>ZTXSPLZFNA</title>
+                <content>ZTXSPLZFNA</content>
+            </snippet>
+            <snippet>
+                <title>7023683324</title>
+                <content>7023683324</content>
+            </snippet>
+            <snippet>
+                <title>CrowdStar</title>
+                <content>rcijk123</content>
+            </snippet>
+            <snippet>
+                <title>randerson</title>
+                <content>m48j7vs5</content>
+            </snippet>
+            <snippet>
+                <title>mail</title>
+                <content>fj8I!foRc</content>
+            </snippet>
+            <snippet>
+                <title>bperna</title>
+                <content>esad1234</content>
+            </snippet>
+            <snippet>
+                <title>d702f80c27</title>
+                <content>d702f80c27</content>
+            </snippet>
+            <snippet>
+                <title>charliebearinlv</title>
+                <content>charliebearinlv</content>
+            </snippet>
+            <snippet>
+                <title>fj89WE123</title>
+                <content>fj89WE123</content>
+            </snippet>
+            <snippet>
+                <title>luk</title>
+                <content>Z00logicalh8t3rl8t3r123four</content>
+            </snippet>
+            <snippet>
+                <title>fj8I!foRc</title>
+                <content>fj8I!foRc</content>
+            </snippet>
+            <snippet>
+                <title>fdNetSpend10</title>
+                <content>fdNetSpend10</content>
+            </snippet>
+            <snippet>
+                <title>fnNVui8912</title>
+                <content>fnNVui8912</content>
+            </snippet>
+            <snippet>
+                <title>DODRBAFIVK</title>
+                <content>DODRBAFIVK</content>
+            </snippet>
+            <snippet>
+                <title>23l3g@1z0m</title>
+                <content>23l3g@1z0ma</content>
+            </snippet>
+            <snippet>
+                <title>fdjkNVuicard1</title>
+                <content>fdjkNVuicard1</content>
+            </snippet>
+            <snippet>
+                <title>fdaEria1</title>
+                <content>fdaEria1</content>
+            </snippet>
+            <snippet>
+                <title>m@gneet0</title>
+                <content>m@gneet0</content>
+            </snippet>
+            <snippet>
+                <title>jaUm@agen0</title>
+                <content>jaUm@agen0</content>
+            </snippet>
+            <snippet>
+                <title>fdlj1konam234fdlj#1konam234</title>
+                <content>fdlj1konam234fdlj#1konam234</content>
+            </snippet>
+            <snippet>
+                <title>hr@apply12</title>
+                <content>hr@apply12</content>
+            </snippet>
+            <snippet>
+                <title>vjjk3b@y123</title>
+                <content>vjjk3b@y123</content>
+            </snippet>
+            <snippet>
+                <title>fjdkNvCen1</title>
+                <content>fjdkNvCen1</content>
+            </snippet>
+            <snippet>
+                <title>ba@cvkblaAeze</title>
+                <content>ba@cvkblaAeze</content>
+            </snippet>
+            <snippet>
+                <title>p@afjyPal1</title>
+                <content>p@afjyPal1</content>
+            </snippet>
+            <snippet>
+                <title>bes1buy1</title>
+                <content>bes1buy1</content>
+            </snippet>
+            <snippet>
+                <title>bes1buy1@</title>
+                <content>bes1buy1@</content>
+            </snippet>
+            <snippet>
+                <title>bes1buy1@A</title>
+                <content>bes1buy1@A</content>
+            </snippet>
+            <snippet>
+                <title>fhHo0stg@ator1</title>
+                <content>fhHo0stg@ator1</content>
+            </snippet>
+            <snippet>
+                <title>host gator</title>
+                <content>rvq4Xl5epiW?</content>
+            </snippet>
+            <snippet>
+                <title>liT3C0inCtr0n@</title>
+                <content>liT3C0inCtr0n@</content>
+            </snippet>
+            <snippet>
+                <title>pfpDroPb0x1</title>
+                <content>pfpDroPb0x1</content>
+            </snippet>
+            <snippet>
+                <title>ajjkAs@na1</title>
+                <content>ajjkAs@na1</content>
+            </snippet>
+            <snippet>
+                <title>flUClfd134@</title>
+                <content>flUClfd134@</content>
+            </snippet>
+            <snippet>
+                <title>slAck323$</title>
+                <content>slAck323$</content>
+            </snippet>
+            <snippet>
+                <title>fluc gmail</title>
+                <content>123456789</content>
+            </snippet>
+            <snippet>
+                <title>Traffic ticket</title>
+                <content>S159608</content>
+            </snippet>
+            <snippet>
+                <title>Fo00dstamp</title>
+                <content>Fo00dstamp</content>
+            </snippet>
+            <snippet>
+                <title>Mukk5721</title>
+                <content>Mukk5721</content>
+            </snippet>
+            <snippet>
+                <title>N3wuser1</title>
+                <content>N3wuser1</content>
+            </snippet>
+            <snippet>
+                <title>EdI3!asdf</title>
+                <content>EdI3!asdf</content>
+            </snippet>
+            <snippet>
+                <title>alsawtffm12</title>
+                <content>alsawtffm12</content>
+            </snippet>
+            <snippet>
+                <title>st0ckaaerarts</title>
+                <content>st0ckaaerarts</content>
+            </snippet>
+            <snippet>
+                <title>pB8Mgm0R</title>
+                <content>pB8Mgm0R</content>
+            </snippet>
+            <snippet>
+                <title>seo-proxies</title>
+                <content>rtyu0987!</content>
+            </snippet>
+            <snippet>
+                <title>hid3my@ass</title>
+                <content>hid3my@ass</content>
+            </snippet>
+            <snippet>
+                <title>iCe67DI5GF</title>
+                <content>iCe67DI5GF</content>
+            </snippet>
+            <snippet>
+                <title>XSvp9CJFBxBQD3</title>
+                <content>XSvp9CJFBxBQD3</content>
+            </snippet>
+            <snippet>
+                <title>WNfzYh76g9CPw7</title>
+                <content>WNfzYh76g9CPw7</content>
+            </snippet>
+            <snippet>
+                <title>O03cH14#</title>
+                <content>O03cH14#</content>
+            </snippet>
+            <snippet>
+                <title>conv3rS@nt1</title>
+                <content>conv3rS@nt1</content>
+            </snippet>
+            <snippet>
+                <title>adC@sh123</title>
+                <content>adC@sh123</content>
+            </snippet>
+            <snippet>
+                <title>h@rdB@s3</title>
+                <content>h@rdB@s3	
+</content>
+            </snippet>
+            <snippet>
+                <title>re</title>
+                <content>hardbase1</content>
+            </snippet>
+            <snippet>
+                <title>pasbin</title>
+                <content>pa@5t3ben</content>
+            </snippet>
+            <snippet>
+                <title>s3</title>
+                <content>s3</content>
+            </snippet>
+            <snippet>
+                <title>SED0</title>
+                <content>s3d0qwer!</content>
+            </snippet>
+            <snippet>
+                <title>cha5</title>
+                <content>ch@5313!</content>
+            </snippet>
+            <snippet>
+                <title>t\/\/1t</title>
+                <content>+w1tT3r!</content>
+            </snippet>
+            <snippet>
+                <title>Robot.de</title>
+                <content>Dx5MPNk7jZ4BpFKQ</content>
+            </snippet>
+            <snippet>
+                <title>G1t</title>
+                <content>g!+hub123</content>
+            </snippet>
+            <snippet>
+                <title>dr0pb0z1</title>
+                <content>dr0pb0z1</content>
+            </snippet>
+            <snippet>
+                <title>2te1b@Y1ui</title>
+                <content>2te1b@Y1ui</content>
+            </snippet>
+            <snippet>
+                <title>PPal</title>
+                <content>p@afjyPal12</content>
+            </snippet>
+            <snippet>
+                <title>l1n3123a</title>
+                <content>l1n3123a</content>
+            </snippet>
+            <snippet>
+                <title>p1w1k123!</title>
+                <content>p1w1k123!</content>
+            </snippet>
+            <snippet>
+                <title>V@g1na123</title>
+                <content>V@g1na123</content>
+            </snippet>
+            <snippet>
+                <title>v3nterel00P</title>
+                <content>v3nterel00P</content>
+            </snippet>
+            <snippet>
+                <title>th1erdStrik3r</title>
+                <content>th1erdStrik3r</content>
+            </snippet>
+            <snippet>
+                <title>Babtcoi1n@</title>
+                <content>Babtcoi1n@</content>
+            </snippet>
+            <snippet>
+                <title>t0mc@t2</title>
+                <content>t0mc@t2</content>
+            </snippet>
+            <snippet>
+                <title>att1234A</title>
+                <content>att1234A</content>
+            </snippet>
+            <snippet>
+                <title>Stud3ntl0an</title>
+                <content>Stud3ntl0an</content>
+            </snippet>
+            <snippet>
+                <title>fa2@sa123</title>
+                <content>fa2@sa12345</content>
+            </snippet>
+            <snippet>
+                <title>untitled snippet</title>
+                <content></content>
+            </snippet>
+            <snippet>
+                <title>m33tup123</title>
+                <content>m33tup123</content>
+            </snippet>
+            <snippet>
+                <title>1nd33d123!</title>
+                <content>1nd33d123!</content>
+            </snippet>
+            <snippet>
+                <title>t&lt;MbL@ar!</title>
+                <content>t&lt;MbL@ar!</content>
+            </snippet>
+            <snippet>
+                <title>t0rl1nks!</title>
+                <content>t0rl1nks!</content>
+            </snippet>
+            <snippet>
+                <title>n3wsIzFr33!</title>
+                <content>n3wsIzFr33!</content>
+            </snippet>
+            <snippet>
+                <title>RkwdaLw8kKzzAujr</title>
+                <content>RkwdaLw8kKzzAujr</content>
+            </snippet>
+            <snippet>
+                <title>joe@</title>
+                <content>eJ!CaJadmin123</content>
+            </snippet>
+            <snippet>
+                <title>d15qus^123</title>
+                <content>d15qus^123</content>
+            </snippet>
+            <snippet>
+                <title>u linux pass</title>
+                <content>WNJzYh79g9CPw7</content>
+            </snippet>
+            <snippet>
+                <title>SBCC12314!</title>
+                <content>SBCC12314!</content>
+            </snippet>
+            <snippet>
+                <title>3vE0nl1n123!</title>
+                <content>3vE0nl1n123!</content>
+            </snippet>
+            <snippet>
+                <title>NiN3G@G9</title>
+                <content>NiN3G@G9</content>
+            </snippet>
+            <snippet>
+                <title>Dx5MPNk7jZ4BpFKQ</title>
+                <content>Dx5MPNk7jZ4BpFKQ</content>
+            </snippet>
+            <snippet>
+                <title>doczine</title>
+                <content>DU3EIXN37W4IUWDZ</content>
+            </snippet>
+            <snippet>
+                <title>authy</title>
+                <content>auTHi31!</content>
+            </snippet>
+            <snippet>
+                <title>40 TB</title>
+                <content>FRUpy3f9v5DXGt</content>
+            </snippet>
+            <snippet>
+                <title>giga news</title>
+                <content>G1G@n#Wz</content>
+            </snippet>
+            <snippet>
+                <title>m!l1v3Ch@t</title>
+                <content>m!l1v3Ch@t</content>
+            </snippet>
+            <snippet>
+                <title>Safari Online</title>
+                <content>s@faR1online</content>
+            </snippet>
+            <snippet>
+                <title>Big Cartel</title>
+                <content>b1GC@rT3l</content>
+            </snippet>
+            <snippet>
+                <title>Joe 40 tb</title>
+                <content>Dx5MPNk7jZ4BpFKQJoe</content>
+            </snippet>
+            <snippet>
+                <title>twit IRC</title>
+                <content>tw1ttv1</content>
+            </snippet>
+            <snippet>
+                <title>St@RT3nGin1</title>
+                <content>St@RT3nGin1</content>
+            </snippet>
+            <snippet>
+                <title>Gu1ST1!k</title>
+                <content>Gu1ST1!k</content>
+            </snippet>
+            <snippet>
+                <title>S30Pr30x13s</title>
+                <content>S30Pr30x13s</content>
+            </snippet>
+            <snippet>
+                <title>P@pAY1PlaYApl!</title>
+                <content>P@pAY1PlaYApl!</content>
+            </snippet>
+            <snippet>
+                <title>acpACh2123AWsta</title>
+                <content>acpACh2123AWsta</content>
+            </snippet>
+            <snippet>
+                <title>GuST3RE@!</title>
+                <content>GuST3RE@!</content>
+            </snippet>
+            <snippet>
+                <title>s0ouNdCRW0d!</title>
+                <content>s0ouNdCRW0d!</content>
+            </snippet>
+            <snippet>
+                <title>D1SC0Gs!@</title>
+                <content>D1SC0Gs!@</content>
+            </snippet>
+            <snippet>
+                <title>disco</title>
+                <content>d1scC0rsd1@!</content>
+            </snippet>
+            <snippet>
+                <title>90 tb beast</title>
+                <content>4t4xb0101011001tCwzK</content>
+            </snippet>
+            <snippet>
+                <title>mysqld.doczine</title>
+                <content>3h4xb0011011001tCiK</content>
+            </snippet>
+            <snippet>
+                <title>APachAWStats1</title>
+                <content>APachAWStats1</content>
+            </snippet>
+            <snippet>
+                <title>JvCZ00123k</title>
+                <content>JvCZ00123k</content>
+            </snippet>
+            <snippet>
+                <title>3zm0b1234</title>
+                <content>3zm0b1234</content>
+            </snippet>
+            <snippet>
+                <title>uGb10q!k9Dd</title>
+                <content>uGb10q!k9Dd</content>
+            </snippet>
+            <snippet>
+                <title>7S3arCH123</title>
+                <content>7S3arCH123</content>
+            </snippet>
+            <snippet>
+                <title>Tw1TCH123!</title>
+                <content>Tw1TCH123!</content>
+            </snippet>
+            <snippet>
+                <title>Ds1ScuSZ1</title>
+                <content>Ds1ScuSZ1</content>
+            </snippet>
+            <snippet>
+                <title>phPcL@aszze3s</title>
+                <content>phPcL@aszze3s</content>
+            </snippet>
+            <snippet>
+                <title>search ssd</title>
+                <content>qxC1001101001A7</content>
+            </snippet>
+            <snippet>
+                <title>rss</title>
+                <content>V^RL100100101tUUM</content>
+            </snippet>
+            <snippet>
+                <title>search 3 tb</title>
+                <content>Aa51001010109Ab^C</content>
+            </snippet>
+            <snippet>
+                <title>streamripper</title>
+                <content>qIr10110010J4i4s^kw</content>
+            </snippet>
+            <snippet>
+                <title>Spr1nT1011</title>
+                <content>Spr1nT1011</content>
+            </snippet>
+            <snippet>
+                <title>sdfaStock123a</title>
+                <content>sdfaStock123a</content>
+            </snippet>
+            <snippet>
+                <title>V^RLf100010101tUUM</title>
+                <content>V^RLf100010101tUUM</content>
+            </snippet>
+            <snippet>
+                <title>buY1proX13s</title>
+                <content>buY1proX13s</content>
+            </snippet>
+            <snippet>
+                <title>H8t3rl8t3r098!</title>
+                <content>H8t3rl8t3r098!</content>
+            </snippet>
+            <snippet>
+                <title>g1t</title>
+                <content>g1!+huB123</content>
+            </snippet>
+            <snippet>
+                <title>6CZ^100101001dC13AR5</title>
+                <content>6cZ^100101001dC13AR5</content>
+            </snippet>
+            <snippet>
+                <title>6CD(10001001dC13AR5</title>
+                <content>6cD(10001001dC13AR5</content>
+            </snippet>
+            <snippet>
+                <title>EL@S5t!ck123</title>
+                <content>EL@S5t!ck</content>
+            </snippet>
+            <snippet>
+                <title>6x3HcnntHUqHaG9z83qMq3YK</title>
+                <content>6x3HcnntHUqHaG9z83qMq3YK</content>
+            </snippet>
+            <snippet>
+                <title>EL@S5t!ck123</title>
+                <content>EL@S5t!ck123</content>
+            </snippet>
+            <snippet>
+                <title>6cD(01001011dC13AR5</title>
+                <content>6cD(01001011dC13AR5</content>
+            </snippet>
+            <snippet>
+                <title>Ch4n^10011010g3m3!</title>
+                <content>Ch4n^10011010g3m3!</content>
+            </snippet>
+            <snippet>
+                <title>E4n^100110101m3j</title>
+                <content>E4n^100110101m3j</content>
+            </snippet>
+            <snippet>
+                <title>Y@hp-00(121</title>
+                <content>Y@hp-00(121</content>
+            </snippet>
+            <snippet>
+                <title>SuR33Tr@der1</title>
+                <content>SuR33Tr@der1</content>
+            </snippet>
+            <snippet>
+                <title>inD33dez1</title>
+                <content>inD33dez1</content>
+            </snippet>
+            <snippet>
+                <title>Cal1J0bs!</title>
+                <content>Cal1J0bs!</content>
+            </snippet>
+            <snippet>
+                <title>Fl33teUp1!</title>
+                <content>Fl33teUp1!</content>
+            </snippet>
+            <snippet>
+                <title>fr33st0ckCh@rts</title>
+                <content>fr33st0ckCh@rts</content>
+            </snippet>
+            <snippet>
+                <title>Micr0ch1p!</title>
+                <content>Micr0ch1p!</content>
+            </snippet>
+            <snippet>
+                <title>serv3er</title>
+                <content>2WWt1001010010SF6RC!njaSf</content>
+            </snippet>
+            <snippet>
+                <title>dyNaM1cN0-ip</title>
+                <content>dyNaM1cN0-ip</content>
+            </snippet>
+            <snippet>
+                <title>Ag1l3net!</title>
+                <content>Ag1l3net!</content>
+            </snippet>
+            <snippet>
+                <title>H1llT0p@</title>
+                <content>H1llT0p@</content>
+            </snippet>
+            <snippet>
+                <title>Ch1TikA@1</title>
+                <content>Ch1TikA@1</content>
+            </snippet>
+            <snippet>
+                <title>linkedin</title>
+                <content>RTYUa10010101234!</content>
+            </snippet>
+            <snippet>
+                <title>asdfqwer!@#$</title>
+                <content>asdfqwer!@#$</content>
+            </snippet>
+            <snippet>
+                <title>Z1pR3cruiter%</title>
+                <content>Z1pR3cruiter%</content>
+            </snippet>
+            <snippet>
+                <title>Unem3plyemt&amp;</title>
+                <content>Unem3plyemt&amp;</content>
+            </snippet>
+            <snippet>
+                <title>SuR33Tr@der123</title>
+                <content>SuR33Tr@der123</content>
+            </snippet>
+            <snippet>
+                <title>MBS04529</title>
+                <content>MBS04529</content>
+            </snippet>
+            <snippet>
+                <title>d1cecom%</title>
+                <content>d1cecom%</content>
+            </snippet>
+            <snippet>
+                <title>P0cke3t@a</title>
+                <content>P0cke3t@a</content>
+            </snippet>
+            <snippet>
+                <title>aLaRcgL@5qs2jC*V</title>
+                <content>aLaRcgL@5qs2jC*V</content>
+            </snippet>
+            <snippet>
+                <title>sdfjlDI10010010</title>
+                <content>sdfjlDI10010010</content>
+            </snippet>
+            <snippet>
+                <title>server2</title>
+                <content>sdejlDI100111101DmJLK@ciof</content>
+            </snippet>
+            <snippet>
+                <title>AiRBnb(03934</title>
+                <content>AiRBnb(03934</content>
+            </snippet>
+            <snippet>
+                <title>SSL Cert</title>
+                <content>sd100111101Djf</content>
+            </snippet>
+            <snippet>
+                <title>propeller ads</title>
+                <content>828y8812</content>
+            </snippet>
+            <snippet>
+                <title>K1ckeStar3r!</title>
+                <content>K1ckeStar3r!</content>
+            </snippet>
+            <snippet>
+                <title>M0snster23!</title>
+                <content>M0snster23!</content>
+            </snippet>
+            <snippet>
+                <title>JS3co1n@a</title>
+                <content>JS3co1n@a</content>
+            </snippet>
+            <snippet>
+                <title>Uspsp@ssword</title>
+                <content>Uspspassw0rdonersdfa</content>
+            </snippet>
+            <snippet>
+                <title>A@Mazs0n1</title>
+                <content>A@Mazs0n1
+</content>
+            </snippet>
+            <snippet>
+                <title>uPw0rk1!</title>
+                <content>uPw0rk1!</content>
+            </snippet>
+            <snippet>
+                <title>Pr0P3ller@ads</title>
+                <content>Pr0P3ller@ads</content>
+            </snippet>
+            <snippet>
+                <title>Clickadu</title>
+                <content>94O0u9W2</content>
+            </snippet>
+            <snippet>
+                <title>Ind13GO0GO!</title>
+                <content>Ind13GO0GO!</content>
+            </snippet>
+            <snippet>
+                <title>AttUv3rse</title>
+                <content>AttUv3rse</content>
+            </snippet>
+            <snippet>
+                <title>I3ndieG0g0&amp;a</title>
+                <content>I3ndieG0g0&amp;a</content>
+            </snippet>
+            <snippet>
+                <title>Ag1leDefGn2cese201%</title>
+                <content>AgileDefen2cese201</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>PHP</title>
+        <snippets>
+            <snippet>
+                <title>strip_tags(stripslashes($_GET['doc']))</title>
+                <content>strip_tags(stripslashes($_GET['doc']))</content>
+            </snippet>
+            <snippet>
+                <title>strip_tags(stripslashes($_POST["secondOption"]))</title>
+                <content>strip_tags(stripslashes($_POST["secondOption"]))</content>
+            </snippet>
+            <snippet>
+                <title>if(isset($_SESSION['valid_user'])){
+	$user = $_SESSION['valid_user'];
+	echo "You are logged in as: ";
+	echo $_SESSION['valid_user'];
+	echo "&lt;br&gt;";
+}</title>
+                <content>if(isset($_SESSION['valid_user'])){
+	$user = $_SESSION['valid_user'];
+	echo "You are logged in as: ";
+	echo $_SESSION['valid_user'];
+	echo "&lt;br&gt;";
+}</content>
+            </snippet>
+            <snippet>
+                <title>if((!isset($_GET['user'])) &amp;&amp; (!isset($_SESSION['valid_user']))){
+	$user = "asdf";
+}</title>
+                <content>if((!isset($_GET['user'])) &amp;&amp; (!isset($_SESSION['valid_user']))){
+	$user = "asdf";
+}</content>
+            </snippet>
+            <snippet>
+                <title>$mysqltime = date("Y-m-d H:i:s");</title>
+                <content>$mysqltime = date("Y-m-d H:i:s");</content>
+            </snippet>
+            <snippet>
+                <title>$user_ip = $_SERVER['REMOTE_ADDR'];</title>
+                <content>$user_ip = $_SERVER['REMOTE_ADDR'];</content>
+            </snippet>
+            <snippet>
+                <title>function error_msg($text) {
+     # add other stuff you may want here
+     $hello_var = 'Problem: '; //example of addon to beginning
+     $goodbye_var = ' goodbye'; //example of addon to end
+     die($hello_var.' '.$text.'&lt;br /&gt;'.$goodbye_var);
+}</title>
+                <content>function error_msg($text) {
+     # add other stuff you may want here
+     $hello_var = 'Problem: '; //example of addon to beginning
+     $goodbye_var = ' goodbye'; //example of addon to end
+     die($hello_var.' '.$text.'&lt;br /&gt;'.$goodbye_var);
+}</content>
+            </snippet>
+            <snippet>
+                <title>if ($stmt = mysqli_prepare($conn, "INSERT INTO `docunator`.`user_file_bookmark` (`user_name`, `system_file_name`, `user_ip`, `search_date`) VALUES (?,?,?,?)")); {
+			mysqli_stmt_bind_param($stmt, "ssss", $user, $doc, $user_ip, $mysqltime);
+			mysqli_stmt_execute($stmt);
+			mysqli_stmt_close($stmt);
+		}</title>
+                <content>if ($stmt = mysqli_prepare($conn, "INSERT INTO `docunator`.`user_file_bookmark` (`user_name`, `system_file_name`, `user_ip`, `search_date`) VALUES (?,?,?,?)")); {
+			mysqli_stmt_bind_param($stmt, "ssss", $user, $doc, $user_ip, $mysqltime);
+			mysqli_stmt_execute($stmt);
+			mysqli_stmt_clo
+se($stmt);
+		}</content>
+            </snippet>
+            <snippet>
+                <title>require_once("sessions.php");
+$sess = new SessionManager();
+
+if (strlen(session_id()) &lt; 1) {
+    session_start();
+}
+require_once("sessions.php");
+$sess = new SessionManager();
+
+if (strlen(session_id()) &lt; 1) {
+    session_start();
+}
+</title>
+                <content>require_once("sessions.php");
+$sess = new SessionManager();
+
+if (strlen(session_id()) &lt; 1) {
+    session_start();
+}
+require_once("sessions.php");
+$sess = new SessionManager();
+
+if (strlen(session_id()) &lt; 1) {
+    session_start();
+}
+</content>
+            </snippet>
+            <snippet>
+                <title>$remoteFile = $url;
+$ch = curl_init($remoteFile);
+curl_setopt($ch, CURLOPT_NOBODY, true);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HEADER, true);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); //not necessary unless the file redirects (like the PHP example we're using here)
+$data = curl_exec($ch);
+curl_close($ch);
+	if ($data === false) {
+	  echo 'cURL failed';
+	  exit;
+	}</title>
+                <content>$remoteFile = $url;
+$ch = curl_init($remoteFile);
+curl_setopt($ch, CURLOPT_NOBODY, true);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HEADER, true);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); //not necessary unless the file redirects (like the PHP example we're using here)
+$data = curl_exec($ch);
+curl_close($ch);
+	if ($data === false) {
+	  echo 'cURL failed';
+	  exit;
+	}</content>
+            </snippet>
+            <snippet>
+                <title>function fetchUrl($uri) {
+    $handle = curl_init();
+
+    curl_setopt($handle, CURLOPT_URL, $uri);
+    curl_setopt($handle, CURLOPT_POST, false);
+    curl_setopt($handle, CURLOPT_BINARYTRANSFER, false);
+    curl_setopt($handle, CURLOPT_HEADER, true);
+    curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($handle, CURLOPT_CONNECTTIMEOUT, 10);
+
+    $response = curl_exec($handle);
+    $hlength  = curl_getinfo($handle, CURLINFO_HEADER_SIZE);
+    $httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
+    $body     = substr($response, $hlength);
+
+    // If HTTP response is not 200, throw exception
+    if ($httpCode != 200) {
+        throw new Exception($httpCode);
+    }
+    return $body;
+}
+</title>
+                <content>function fetchUrl($uri) {
+    $handle = curl_init();
+
+    curl_setopt($handle, CURLOPT_URL, $uri);
+    curl_setopt($handle, CURLOPT_POST, false);
+    curl_setopt($handle, CURLOPT_BINARYTRANSFER, false);
+    curl_setopt($handle, CURLOPT_HEADER, true);
+    curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($handle, CURLOPT_CONNECTTIMEOUT, 10);
+
+    $response = curl_exec($handle);
+    $hlength  = curl_getinfo($handle, CURLINFO_HEADER_SIZE);
+    $httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
+    $body     = substr($response, $hlength);
+
+    // If HTTP response is not 200, throw exception
+    if ($httpCode != 200) {
+        throw new Exception($httpCode);
+    }
+    return $body;
+}
+</content>
+            </snippet>
+            <snippet>
+                <title>$new_file_name = str_replace(" ", "_", $user_file_name);</title>
+                <content>$new_file_name = str_replace(" ", "_", $user_file_name);</content>
+            </snippet>
+            <snippet>
+                <title>$index = "curl 'http://192.168.1.150:8983/solr/update/extract?&amp;literal.id=".$folderName."&amp;uprefix=attr_&amp;fmap.content=body&amp;commit=true' -F 'myfile=@".$internalip.".pdf'";
+		system($index, $retval);</title>
+                <content>$index = "curl 'http://192.168.1.150:8983/solr/update/extract?&amp;literal.id=".$folderName."&amp;uprefix=attr_&amp;fmap.content=body&amp;commit=true' -F 'myfile=@".$internalip.".pdf'";
+		system($index, $retval);</content>
+            </snippet>
+            <snippet>
+                <title>$xmlUrl = "/usr/home/capstone/search-terms.txt";
+$string = file_get_contents($xmlUrl);
+$array = preg_split("/(\r\n|\n|\r)/", $string);
+
+foreach ($array as $i =&gt; $row) {
+    $s = urldecode($row);
+    $matches = array();
+    $t = preg_match('/q=(.*?)\&amp;/s', $s, $matches);
+    $string = print_r($matches[1], true);
+    $string = urldecode($string);
+    $null = NULL;
+		if ($stmt = mysqli_prepare($conn, "INSERT INTO `docunator`.`file_seo_terms` (`seo_term`,`seo_researched`) VALUES (?,?)")); {
+			mysqli_stmt_bind_param($stmt, "ss", $string, $null);
+			mysqli_stmt_execute($stmt);
+			mysqli_stmt_close($stmt);
+		}
+}
+</title>
+                <content>$xmlUrl = "/usr/home/capstone/search-terms.txt";
+$string = file_get_contents($xmlUrl);
+$array = preg_split("/(\r\n|\n|\r)/", $string);
+
+foreach ($array as $i =&gt; $row) {
+    $s = urldecode($row);
+    $matches = array();
+    $t = preg_match('/q=(.*?)\&amp;/s', $s, $matches);
+    $string = print_r($matches[1], true);
+    $string = urldecode($string);
+    $null = NULL;
+		if ($stmt = mysqli_prepare($conn, "INSERT INTO `docunator`.`file_seo_terms` (`seo_term`,`seo_researched`) VALUES (?,?)")); {
+			mysqli_stmt_bind_param($stmt, "ss", $string, $null);
+			mysqli_stmt_execute($stmt);
+			mysqli_stmt_close($stmt);
+		}
+}
+</content>
+            </snippet>
+            <snippet>
+                <title>function db_connect()
+{
+   $result = new mysqli('localhost', 'docunator', 'X23n7dkpP42x7M4LH', 'scraper'); 
+   if (!$result)
+     throw new Exception('Could not connect to database server');
+   else
+     return $result;
+}</title>
+                <content>function db_connect()
+{
+   $result = new mysqli('localhost', 'docunator', 'X23n7dkpP42x7M4LH', 'scraper'); 
+   if (!$result)
+     throw new Exception('Could not connect to database server');
+   else
+     return $result;
+}</content>
+            </snippet>
+            <snippet>
+                <title>Do curl loop</title>
+                <content>$i = 0;
+do {
+    $i++;
+    $index = "curl http://localhost/scraper.php";
+	system($index, $retval);
+	sleep(20);
+} while ($i &lt; 100000);</content>
+            </snippet>
+            <snippet>
+                <title>Simple do loop</title>
+                <content>$i = 0;
+do {
+    $i++;
+
+	} while ($i &lt; 1000000);
+
+mysqli_close($conn);
+</content>
+            </snippet>
+            <snippet>
+                <title>echo "&lt;/br&gt;";</title>
+                <content>echo "&lt;/br&gt;";</content>
+            </snippet>
+            <snippet>
+                <title>$_SERVER['REQUEST_TIME'];</title>
+                <content>$_SERVER['REQUEST_TIME'];</content>
+            </snippet>
+            <snippet>
+                <title>$filename = 'test.txt';
+if (is_writable($filename)) {
+    echo 'The file is writable';
+} else {
+    echo 'The file is not writable';
+}</title>
+                <content>$filename = 'test.txt';
+if (is_writable($filename)) {
+    echo 'The file is writable';
+} else {
+    echo 'The file is not writable';
+}</content>
+            </snippet>
+            <snippet>
+                <title>regex google trend</title>
+                <content>&lt;?php
+include("db.php");
+$conn = db_connect();
+
+class GoogleHotrends {
+private $trendsurl = "http://www.google.com/trends/hottrends/atom/hourly";
+
+public function fetch_trends()
+{
+	$c = curl_init($this-&gt;trendsurl);
+	curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+	$responsedata = curl_exec($c);
+	curl_close($c);
+	return $this-&gt;parse_trend_feed($responsedata);
+}
+
+private function parse_trend_feed($data) {
+	preg_match_all('/.+?&lt;a href=".+?"&gt;(.+?)&lt;\/a&gt;.+?/',$data,$matches);
+	return $matches[1];
+	}
+}
+
+// Fetches google hot hourly 20 trends
+$trends = new GoogleHotrends();
+$keywords = $trends-&gt;fetch_trends();
+//print_r($keywords);
+
+foreach ($keywords as $i)
+{
+
+    $string = print_r($i, true);
+    echo $string;
+    $mysqltime = date("Y-m-d H:i:s");
+    $null = NULL;
+    
+	if ($stmt = mysqli_prepare($conn, "INSERT INTO `docunator`.`google_trend_terms` (`search_term`,`search_date`, `search_page`) VALUES (?,?,?)")); {
+		mysqli_stmt_bind_param($stmt, "sss", $string, $mysqltime, $null);
+		mysqli_stmt_execute($stmt);
+		mysqli_stmt_close($stmt);
+	}
+
+}
+
+
+/*
+INSERT INTO `docunator`.`google_trend_terms` (`search_term`,`search_date`, `search_page`) VALUES ('tnt', '2013-06-04 00:00:00', NULL);
+*/
+
+?&gt;</content>
+            </snippet>
+            <snippet>
+                <title>serialized.php</title>
+                <content>&lt;?php
+$file_temp = "/var/www/bigdata/serialized.txt";
+$lfhandler = file_get_contents($file_temp);	
+$myNewArray = unserialize($lfhandler);
+print_r($myNewArray);
+$last = count($myNewArray) - 1;
+foreach ($myNewArray as $i =&gt; $row)
+{ 
+    $isFirst = ($i == 0);
+    $isLast = ($i == $last);
+    $title = $row['title'];
+    $trim = $row['url'];
+    $host = $row['host'];
+    $test = $row[0]['keyword'];
+    echo $test;
+    echo "&lt;br&gt;";
+    $trimmed = $row['url'];
+	$strlen = strlen($trimmed);
+	$length = strrpos($trimmed, '&amp;sa=');
+	if ($length === FALSE) {
+	  $length = $strlen;
+	}
+	$result = substr($trimmed, 0, $length);
+	echo $title;
+    echo "&lt;br&gt;";
+	echo $result;
+	echo "&lt;br&gt;";
+	echo $host;
+	echo "&lt;br&gt;";	
+}
+?&gt;</content>
+            </snippet>
+            <snippet>
+                <title>google analy</title>
+                <content>&lt;script type="text/javascript"&gt;
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40167070-1']);
+  _gaq.push(['_setDomainName', 'doczine.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })(); 
+
+&lt;/script&gt;</content>
+            </snippet>
+            <snippet>
+                <title>snippet docz</title>
+                <content>&lt;?php
+include("db.php");
+
+$urlindex = "";
+ 
+$conn = db_connect();
+
+$i = 0;
+do {
+    $i++;
+	
+$query = "SELECT `system_file_name` FROM `docunator`.`file_transferred` WHERE `file_transferred`.`snippet_confirmed` IS NULL LIMIT 1;";
+
+if ($stmt = mysqli_prepare($conn, $query)) {
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_bind_result($stmt, $system_file_name);
+    while (mysqli_stmt_fetch($stmt)) {
+
+    }
+    mysqli_stmt_close($stmt);
+}
+
+	$query = "UPDATE `docunator`.`file_transferred` SET `snippet_confirmed` = 'Y' WHERE `file_transferred`.`system_file_name` = '".$system_file_name."';";
+
+	if ($stmt = mysqli_prepare($conn, $query)) {
+		mysqli_stmt_execute($stmt);
+		mysqli_stmt_close($stmt);
+	}
+
+$query = "SELECT `file_counter` FROM `docunator`.`file_counter` WHERE `file_counter`.`system_file_name` = '".$system_file_name."';";
+
+if ($stmt = mysqli_prepare($conn, $query)) {
+		mysqli_stmt_execute($stmt);
+		mysqli_stmt_bind_result($stmt, $file_counter);
+		while (mysqli_stmt_fetch($stmt)) {
+
+		}
+		mysqli_stmt_close($stmt);
+	}
+
+$query = "SELECT `short_name`, `user_file_name`, `folder` FROM `docunator`.`user_file` WHERE `user_file`.`system_file_name` ='".$system_file_name."';";
+
+if ($stmt = mysqli_prepare($conn, $query)) {
+		mysqli_stmt_execute($stmt);
+		mysqli_stmt_bind_result($stmt, $short_name, $user_file_name, $folder);
+		while (mysqli_stmt_fetch($stmt)) {
+		$trim_period = rtrim($short_name, ".");
+		$urlindex = "http://192.168.1.100/bigdata/".$folder."/".$system_file_name."/".$trim_period.".txt";
+		}
+		mysqli_stmt_close($stmt);
+	}
+	
+    $file = fopen($urlindex, 'r');
+    //The first 20 characters are stored in the $theOutput 
+    $theOutput = fread($file, 300);
+    //echo $theOutput;
+    fclose($file);    
+
+
+	if ($stmt = mysqli_prepare($conn, "INSERT INTO `docunator`.`file_snippet` (`system_file_name`, `file_snippet`) VALUES (?,?)")); {
+		mysqli_stmt_bind_param($stmt, "ss", $system_file_name, $theOutput);
+		mysqli_stmt_execute($stmt);
+		mysqli_stmt_close($stmt);
+	}
+sleep(20);
+} while ($i &lt; 1000000);
+    
+?&gt;</content>
+            </snippet>
+            <snippet>
+                <title>spaces tab</title>
+                <content></content>
+            </snippet>
+            <snippet>
+                <title>$response = str_replace("\n","&lt;br /&gt;", $sched_response);</title>
+                <content>$response = str_replace("\n","&lt;br /&gt;", $sched_response);</content>
+            </snippet>
+            <snippet>
+                <title>$_POST Table Array</title>
+                <content>echo "&lt;table border='1'&gt;
+";
+foreach($_POST as $stuff =&gt; $val ) {
+$val_array_post[$stuff] = $val;
+echo "&lt;tr&gt;";
+echo "&lt;td&gt;".strip_tags(stripslashes($stuff))." &lt;/td&gt;";
+echo "&lt;td&gt;".strip_tags(stripslashes($val))." &lt;/td&gt;";
+echo "&lt;/tr&gt;
+";
+}
+echo "&lt;/table&gt;";
+print_r($val_array_post);</content>
+            </snippet>
+            <snippet>
+                <title>&lt;?php
+  include 'library.php';
+  $q = isset($_REQUEST['q']) ? $_REQUEST['q'] : false;
+  require_once( '/usr/share/nginx/www/mod/apache-solr-3.3.0/SolrPhpClient/Apache/Solr/Service1.php' );
+  require_once("library.php");
+  $solr = new Apache_Solr_Service( '192.168.1.61', '8983', '/solr' );
+  // Run some queries. 
+  $offset = 0;
+  $limit = 100;
+  $lucky = rand(1, 1000000);
+  $sort = "random_$lucky desc";
+  $filter = 'clusters,id,title1,filelink,fileimage,last_modified';
+  $random = '*:*';
+  $queries = array(
+        "$q"
+  );
+  foreach ( $queries as $query ) {
+    $response = $solr-&gt;search( $query, $filter, $offset, $limit);
+    if ( $response-&gt;getHttpStatus() == 200 ) { 
+      // print_r( $response-&gt;getRawResponse() );
+        foreach ( $response-&gt;clusters as $doc ) {
+                  $result = array_merge((array)$doc-&gt;labels, (array)$doc-&gt;docs);
+                          $labels = $result[0];
+                  foreach(array_slice($result,1) as $key=&gt;$id)
+                  {
+                        $country_select = mysql_query
+                        (
+                        "INSERT INTO `docunator`.`file_tag` 
+                        (`carrot`) 
+                        VALUES ('$labels')
+                        ");
+                        $index = "curl http://192.168.1.61:8983/solr/update -H 'Content-type:application/json' -d '[{\"id\":\"$id\",\"filetag\":{\"add\":\"$labels\"}}]'";
+                        echo "&lt;h1&gt;".$labels."&lt;/h1&gt;" . "&lt;h2&gt;" .$id. "&lt;/h2&gt;" . "\n";
+                        system($index);
+                  }               
+        }
+      
+    }
+    else {
+      echo $response-&gt;getHttpStatusMessage();
+    }
+  }
+?&gt;
+&lt;?php 
+$commit = "curl http://192.168.1.61:8983/solr/update/json?commit=true";
+system($commit);
+?&gt;
+</title>
+                <content>&lt;?php
+  include 'library.php';
+  $q = isset($_REQUEST['q']) ? $_REQUEST['q'] : false;
+  require_once( '/usr/share/nginx/www/mod/apache-solr-3.3.0/SolrPhpClient/Apache/Solr/Service1.php' );
+  require_once("library.php");
+  $solr = new Apache_Solr_Service( '192.168.1.61', '8983', '/solr' );
+  // Run some queries. 
+  $offset = 0;
+  $limit = 100;
+  $lucky = rand(1, 1000000);
+  $sort = "random_$lucky desc";
+  $filter = 'clusters,id,title1,filelink,fileimage,last_modified';
+  $random = '*:*';
+  $queries = array(
+        "$q"
+  );
+  foreach ( $queries as $query ) {
+    $response = $solr-&gt;search( $query, $filter, $offset, $limit);
+    if ( $response-&gt;getHttpStatus() == 200 ) { 
+      // print_r( $response-&gt;getRawResponse() );
+        foreach ( $response-&gt;clusters as $doc ) {
+                  $result = array_merge((array)$doc-&gt;labels, (array)$doc-&gt;docs);
+                          $labels = $result[0];
+                  foreach(array_slice($result,1) as $key=&gt;$id)
+                  {
+                        $country_select = mysql_query
+                        (
+                        "INSERT INTO `docunator`.`file_tag` 
+                        (`carrot`) 
+                        VALUES ('$labels')
+                        ");
+                        $index = "curl http://192.168.1.61:8983/solr/update -H 'Content-type:application/json' -d '[{\"id\":\"$id\",\"filetag\":{\"add\":\"$labels\"}}]'";
+                        echo "&lt;h1&gt;".$labels."&lt;/h1&gt;" . "&lt;h2&gt;" .$id. "&lt;/h2&gt;" . "\n";
+                        system($index);
+                  }               
+        }
+      
+    }
+    else {
+      echo $response-&gt;getHttpStatusMessage();
+    }
+  }
+?&gt;
+&lt;?php 
+$commit = "curl http://192.168.1.61:8983/solr/update/json?commit=true";
+system($commit);
+?&gt;
+</content>
+            </snippet>
+            <snippet>
+                <title>file output browser</title>
+                <content>if($_SESSION['valid_user'] == "cti"){
+	$query = $_SESSION['cti_url'];
+}
+if($stmt = mysqli_prepare($conn, $query_cache)) {
+		mysqli_stmt_execute($stmt);
+		mysqli_stmt_bind_result($stmt, $unique_id, $brand, $ani, $destination, $start_time, $assigned_agent, $disposition);
+		while (mysqli_stmt_fetch($stmt)) {
+			$count = $count + 1;
+			$list[$count][unique_id] = $unique_id;
+			$list[$count][brand] = $brand;
+			$list[$count][ani] = $ani;
+			$list[$count][destination] = $destination;
+			$list[$count][start_time] = $start_time;
+			$list[$count][assigned_agent] = $assigned_agent;
+			$list[$count][disposition] = $disposition;
+			$filename = "/var/www/live/recordings/AGENT-".$unique_id.".wav";
+			if (file_exists($filename)) {
+				$recording = "http://dialer.customteleconnect.com/oprecordings/AGENT-".$unique_id.".wav";
+			} else {
+				$recording = "No Recording";
+			}
+			$list[$count][recording] = $recording;
+		}
+		mysqli_stmt_close($stmt);
+	}
+	//print_r($list);
+	$output = fopen("php://output",'w') or die("Can't open php://output");
+	header('Content-Description: File Transfer');
+	header("Content-Type:application/csv"); 
+	header('Content-Disposition: attachment; filename="recordings.csv"');
+	header('Content-Transfer-Encoding: binary');
+	foreach ($list as $fields) {
+		fputcsv($output, $fields);
+	}
+	readfile($output);
+	ob_clean();
+	flush();
+	fclose($output) or die("Can't close php://output");
+	exit();
+}</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>MySQL</title>
+        <snippets>
+            <snippet>
+                <title>SELECT DATE( file_timestamp ) AS date, count( * )
+FROM file_counter
+WHERE file_timestamp
+BETWEEN '2013-04-09'
+AND '2013-07-01'
+GROUP BY date
+LIMIT 0 , 1000</title>
+                <content>SELECT DATE( file_timestamp ) AS date, count( * )
+FROM file_counter
+WHERE file_timestamp
+BETWEEN '2013-04-09'
+AND '2013-07-01'
+GROUP BY date
+LIMIT 0 , 1000</content>
+            </snippet>
+            <snippet>
+                <title>UPDATE `scraper`.`results` 
+SET `converted` = 'Y' 
+WHERE `urlcounter` LIKE '%6%'
+AND `converted` IS NULL;</title>
+                <content>UPDATE `scraper`.`results` 
+SET `converted` = 'Y' 
+WHERE `urlcounter` LIKE '%6%'
+AND `converted` IS NULL;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT `user_agent`, count(*)
+FROM `logdata`
+WHERE `user_agent` LIKE '%bot%'
+GROUP BY `user_agent`;</title>
+                <content>SELECT `user_agent`, count(*)
+FROM `logdata`
+WHERE `user_agent` LIKE '%bot%'
+GROUP BY `user_agent`;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT `user_agent` , count( * )
+FROM `logdata`
+GROUP BY `user_agent`
+LIMIT 0 , 30</title>
+                <content>SELECT `user_agent` , count( * )
+FROM `logdata`
+GROUP BY `user_agent`
+LIMIT 0 , 1000</content>
+            </snippet>
+            <snippet>
+                <title>SELECT `file_seo`.`carrot_seo_term`, COUNT(*) FROM `docunator`.`file_seo` WHERE `file_seo`.`carrot_seo_term` LIKE '".$term."' GROUP BY carrot_seo_term;</title>
+                <content>SELECT `file_seo`.`carrot_seo_term`, COUNT(*) FROM `docunator`.`file_seo` WHERE `file_seo`.`carrot_seo_term` LIKE '".$term."' GROUP BY carrot_seo_term;</content>
+            </snippet>
+            <snippet>
+                <title>$query = "UPDATE `scraper`.`results` SET `converted` = 'Y' WHERE `results`.`urlcounter` = '".$urlcounter."';";
+
+if ($stmt = mysqli_prepare($conn1, $query)) {
+	mysqli_stmt_execute($stmt);
+	mysqli_stmt_close($stmt);
+}</title>
+                <content>$query = "UPDATE `scraper`.`results` SET `converted` = 'Y' WHERE `results`.`urlcounter` = '".$urlcounter."';";
+
+if ($stmt = mysqli_prepare($conn1, $query)) {
+	mysqli_stmt_execute($stmt);
+	mysqli_stmt_close($stmt);
+}</content>
+            </snippet>
+            <snippet>
+                <title>$query = "SELECT `urlcounter`, `title`, `url`, `host`, `seoterm`, `date` FROM `scraper`.`results` WHERE `results`.`converted` IS NULL limit 1;";
+
+if ($stmt = mysqli_prepare($conn1, $query)) {
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_bind_result($stmt, $urlcounter, $title, $url, $host, $seoterm, $date);
+    while (mysqli_stmt_fetch($stmt)) {
+
+    }
+    mysqli_stmt_close($stmt);
+}</title>
+                <content>$query = "SELECT `urlcounter`, `title`, `url`, `host`, `seoterm`, `date` FROM `scraper`.`results` WHERE `results`.`converted` IS NULL limit 1;";
+
+if ($stmt = mysqli_prepare($conn1, $query)) {
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_bind_result($stmt, $urlcounter, $title, $url, $host, $seoterm, $date);
+    while (mysqli_stmt_fetch($stmt)) {
+
+    }
+    mysqli_stmt_close($stmt);
+}</content>
+            </snippet>
+            <snippet>
+                <title>if ($stmt = mysqli_prepare($conn, "INSERT INTO `docunator`.`file_location` (`system_file_name`, `folder`) VALUES (?,?)")); {
+			mysqli_stmt_bind_param($stmt, "ss", $folderName, $rand_folder);
+			mysqli_stmt_execute($stmt);
+			mysqli_stmt_close($stmt);
+		}</title>
+                <content>if ($stmt = mysqli_prepare($conn, "INSERT INTO `docunator`.`file_location` (`system_file_name`, `folder`) VALUES (?,?)")); {
+			mysqli_stmt_bind_param($stmt, "ss", $folderName, $rand_folder);
+			mysqli_stmt_execute($stmt);
+			mysqli_stmt_close($stmt);
+		}</content>
+            </snippet>
+            <snippet>
+                <title>SELECT `file_seo_traffic`.`carrot_seo_term` , COUNT( * ) AS yoyo
+FROM `docunator`.`file_seo_traffic`
+GROUP BY carrot_seo_term
+ORDER BY yoyo DESC
+LIMIT 0 , 1000</title>
+                <content>SELECT `file_seo_traffic`.`carrot_seo_term` , COUNT( * ) AS yoyo
+FROM `docunator`.`file_seo_traffic`
+GROUP BY carrot_seo_term
+ORDER BY yoyo DESC
+LIMIT 0 , 1000;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT *
+FROM `logdata`
+WHERE `request_uri` LIKE '%ej_cajayon_resume%'
+LIMIT 0 , 1000</title>
+                <content>SELECT *
+FROM `logdata`
+WHERE `request_uri` LIKE '%ej_cajayon_resume%'
+LIMIT 0 , 1000;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT *, COUNT(*) AS yoyo
+FROM `logs`.`logdata`
+WHERE `logdata`.`referer` NOT LIKE '%doczine.com%' OR '%192.168%'
+GROUP BY `referer`
+ORDER BY yoyo DESC
+LIMIT 0 , 1000;</title>
+                <content>SELECT *, COUNT(*) AS yoyo
+FROM `logs`.`logdata`
+WHERE `logdata`.`referer` NOT LIKE '%doczine.com%' OR '%192.168%'
+GROUP BY `referer`
+ORDER BY yoyo DESC
+LIMIT 0 , 1000;</content>
+            </snippet>
+            <snippet>
+                <title>DELETE
+FROM `logdata`
+WHERE `referer` LIKE '%192.168.%';</title>
+                <content>DELETE
+FROM `logdata`
+WHERE `referer` LIKE '%192.168.%';</content>
+            </snippet>
+            <snippet>
+                <title>SELECT *
+FROM `file`
+WHERE `file_timestamp` LIKE '%2013-06-11%'
+LIMIT 0 , 30</title>
+                <content>SELECT *
+FROM `file`
+WHERE `file_timestamp` LIKE '%2013-06-11%'
+LIMIT 0 , 30</content>
+            </snippet>
+            <snippet>
+                <title>SELECT * FROM `results`
+WHERE `date` LIKE '%2013-06-10%'
+LIMIT 0 , 30;</title>
+                <content>SELECT * FROM `results`
+WHERE `date` LIKE '%2013-06-10%'
+LIMIT 0 , 30;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT *, count(*)
+FROM `logdata`
+WHERE `request_uri` LIKE '%.txt%'
+AND `referer` NOT LIKE '%192.168%'
+GROUP BY `user_agent`
+ORDER BY count(*) DESC
+LIMIT 0 , 1000;</title>
+                <content>SELECT *, count(*)
+FROM `logdata`
+WHERE `request_uri` LIKE '%.txt%'
+AND `referer` NOT LIKE '%192.168%'
+GROUP BY `user_agent`
+ORDER BY count(*) DESC
+LIMIT 0 , 1000;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT `seoterm`, count(*)
+FROM `results`
+WHERE `seoterm` LIKE '%pdf%'
+GROUP BY `seoterm` DESC
+LIMIT 0 , 1000;</title>
+                <content>SELECT `seoterm`, count(*)
+FROM `results`
+WHERE `seoterm` LIKE '%pdf%'
+GROUP BY `seoterm` DESC
+LIMIT 0 , 1000;</content>
+            </snippet>
+            <snippet>
+                <title>mysqldump -u root -p --all-databases &gt; db.sql</title>
+                <content>mysqldump -u root -p --all-databases &gt; db.sql</content>
+            </snippet>
+            <snippet>
+                <title>mysqldump -u root -p --all-databases &gt; db.sql</title>
+                <content>mysqldump -u root -p docunator &gt; db.sql</content>
+            </snippet>
+            <snippet>
+                <title>mysqldump -u docunator -pX23n7dkpP42x7M4LH docunator &gt; db.sql</title>
+                <content>mysqldump -u docunator -pX23n7dkpP42x7M4LH docunator &gt; db.sql</content>
+            </snippet>
+            <snippet>
+                <title>SELECT *
+FROM `docunator`.`file_counter`
+INNER JOIN `docunator`.`file_title`
+USING ( system_file_name )
+INNER JOIN `docunator`.`user_file`
+USING ( system_file_name )
+INNER JOIN `docunator`.`file_snippet`
+USING ( system_file_name )
+INNER JOIN `docunator`.`file_seo`
+USING ( system_file_name )
+ORDER BY `file_seo`.`carrot_seo_term` DESC
+LIMIT 0 , 1000</title>
+                <content>SELECT *
+FROM `docunator`.`file_counter`
+INNER JOIN `docunator`.`file_title`
+USING ( system_file_name )
+INNER JOIN `docunator`.`user_file`
+USING ( system_file_name )
+INNER JOIN `docunator`.`file_snippet`
+USING ( system_file_name )
+INNER JOIN `docunator`.`file_seo`
+USING ( system_file_name )
+ORDER BY `file_seo`.`carrot_seo_term` DESC
+LIMIT 0 , 1000;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT `user_file_name` , `file_size`;
+FROM `docunator`.`file_fuck`
+WHERE `user_file_name` LIKE '%guide-optipoint-500-3.pdf%'
+AND `file_size` LIKE '%335863%'
+LIMIT 0 , 30</title>
+                <content>SELECT `user_file_name` , `file_size`
+FROM `docunator`.`file_fuck`
+WHERE `user_file_name` LIKE '%guide-optipoint-500-3.pdf%'
+AND `file_size` LIKE '%335863%'
+LIMIT 0 , 30;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT `host` , COUNT( * ) AS yoyo
+FROM `scraper`.`results`
+GROUP BY `host`
+ORDER BY `yoyo` DESC
+LIMIT 0 , 10000;</title>
+                <content>SELECT `host` , COUNT( * ) AS yoyo
+FROM `scraper`.`results`
+GROUP BY `host`
+ORDER BY `yoyo` DESC
+LIMIT 0 , 10000;</content>
+            </snippet>
+            <snippet>
+                <title>DELETE FROM `docunator`.`file_comment` WHERE `file_comment`.`system_file_name` = '1368112289_752498cd8e' AND `file_comment`.`verified` IS NULL;</title>
+                <content>DELETE FROM `docunator`.`file_comment` WHERE `file_comment`.`system_file_name` = '1368112289_752498cd8e' AND `file_comment`.`verified` IS NULL;</content>
+            </snippet>
+            <snippet>
+                <title>DELETE FROM `docunator`.`file_comment` WHERE `file_comment`.`user_name` = '27.159.216.15' AND `file_comment`.`verified` IS NULL;</title>
+                <content>DELETE FROM `docunator`.`file_comment` WHERE `file_comment`.`user_name` = '27.159.216.15' AND `file_comment`.`verified` IS NULL;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT `file_title`
+FROM `file_title`
+WHERE `file_title` LIKE '%magazine%'
+LIMIT 0 , 10000;</title>
+                <content>SELECT `file_title`
+FROM `file_title`
+WHERE `file_title` LIKE '%magazine%'
+LIMIT 0 , 10000;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT `system_file_name` , count( * )
+FROM `file_comment`
+GROUP BY `system_file_name`
+ORDER BY count( * ) DESC
+LIMIT 0 , 1000
+</title>
+                <content>SELECT `system_file_name` , count( * )
+FROM `file_comment`
+GROUP BY `system_file_name`
+ORDER BY count( * ) DESC
+LIMIT 0 , 1000;</content>
+            </snippet>
+            <snippet>
+                <title>DELETE FROM `file_comment` WHERE `file_comment` LIKE '%http%' AND `verified` IS NULL;</title>
+                <content>DELETE FROM `file_comment` WHERE `file_comment` LIKE '%http%' AND `verified` IS NULL;</content>
+            </snippet>
+            <snippet>
+                <title>DELETE FROM `file_comment` WHERE `file_comment` LIKE '%Doczine.com%' AND `verified` IS NULL;</title>
+                <content>DELETE FROM `file_comment` WHERE `file_comment` LIKE '%Doczine.com%' AND `verified` IS NULL;</content>
+            </snippet>
+            <snippet>
+                <title>select url from `scraper`.`results` where url like '%\'%';
+</title>
+                <content>select url from `scraper`.`results` where url like '%\'%';
+</content>
+            </snippet>
+            <snippet>
+                <title>SELECT count(*) FROM `file_seo`;</title>
+                <content>SELECT count(*) FROM `file_seo`;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT count(*) FROM `seoterm` </title>
+                <content>SELECT count(*) FROM `seoterm` </content>
+            </snippet>
+            <snippet>
+                <title>scraper results host count</title>
+                <content>SELECT `host` , count(*) as `yo`
+FROM `results`
+GROUP BY `host`
+ORDER BY `yo` DESC
+LIMIT 0 , 1000;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT DISTINCT `host` FROM `scraper`.`results`;</title>
+                <content>SELECT DISTINCT `host` FROM `scraper`.`results`;</content>
+            </snippet>
+            <snippet>
+                <title>UPDATE `scraper`.`seoterm` SET `searched` = NULL WHERE `seoterm`.`searched` = 'NULL'</title>
+                <content>UPDATE `scraper`.`seoterm` SET `searched` = NULL WHERE `seoterm`.`searched` = 'NULL'</content>
+            </snippet>
+            <snippet>
+                <title>SELECT count(*) FROM `seoterm` </title>
+                <content>SELECT count(*) FROM `seoterm` </content>
+            </snippet>
+            <snippet>
+                <title>Triple INNER JOIN</title>
+                <content>SELECT `file_title`, `user_file_name`, `file_counter`, `file_snippet`
+FROM `docunator`.`file_counter`
+INNER JOIN `docunator`.`file_title`
+USING ( system_file_name )
+INNER JOIN `docunator`.`user_file`
+USING ( system_file_name )
+INNER JOIN `docunator`.`file_snippet`
+USING ( system_file_name )
+INNER JOIN `docunator`.`file_seo`
+USING ( system_file_name )
+WHERE `file_seo`.`carrot_seo_term` LIKE '".$term."'
+ORDER BY `file_seo`.`carrot_seo_term` DESC </content>
+            </snippet>
+            <snippet>
+                <title>SELECT DISTINCT `file`.`system_file_name`, `file_counter`.`file_size`, `file_title`.`file_title`, `file_counter`.`file_timestamp`, `file_url`.`url` FROM `docunator`.`file` INNER JOIN `docunator`.`file_title` USING ( system_file_name ) INNER JOIN `docunator`.`file_seo` USING ( system_file_name ) INNER JOIN `docunator`.`file_counter` USING ( system_file_name ) INNER JOIN `docunator`.`file_url` USING ( system_file_name ) LIMIT 0 , 100;</title>
+                <content>SELECT DISTINCT `file`.`system_file_name`, `file_counter`.`file_size`, `file_title`.`file_title`, `file_counter`.`file_timestamp`, `file_url`.`url` FROM `docunator`.`file` INNER JOIN `docunator`.`file_title` USING ( system_file_name ) INNER JOIN `docunator`.`file_seo` USING ( system_file_name ) INNER JOIN `docunator`.`file_counter` USING ( system_file_name ) INNER JOIN `docunator`.`file_url` USING ( system_file_name ) LIMIT 0 , 100;</content>
+            </snippet>
+            <snippet>
+                <title>mysql -u docunator -pX23n7dkpP42x7M4LH scraper &lt; scraper_09152013.sql</title>
+                <content>mysql -u docunator -pX23n7dkpP42x7M4LH scraper &lt; scraper_09152013.sql</content>
+            </snippet>
+            <snippet>
+                <title>DELETE FROM `results` WHERE `url` LIKE '%216.239.37.100%';</title>
+                <content>DELETE FROM `results` WHERE `url` LIKE '%216.239.37.100%';</content>
+            </snippet>
+            <snippet>
+                <title> alter table user_seminar add us_id Int NOT NULL AUTO_INCREMENT key;</title>
+                <content>ALTER TABLE file ADD counter INT 		NOT NULL AUTO_INCREMENT key;</content>
+            </snippet>
+            <snippet>
+                <title>DELETE FROM `name` WHERE `counter` &lt; '23041836';</title>
+                <content>DELETE FROM `name` WHERE `counter` &lt; '23041836';</content>
+            </snippet>
+            <snippet>
+                <title>SELECT *
+FROM `rhyme_match`
+ORDER BY `rhyme_match`.`word` DESC , `rhyme_match`.`count` DESC </title>
+                <content>SELECT *
+FROM `rhyme_match`
+ORDER BY `rhyme_match`.`word` DESC , `rhyme_match`.`count` DESC </content>
+            </snippet>
+            <snippet>
+                <title>SELECT max(id) FROM `scraper`.`results`;</title>
+                <content>SELECT max(id) FROM `scraper`.`results`;</content>
+            </snippet>
+            <snippet>
+                <title>SELECT max(counter) FROM `docunator`.`file`;</title>
+                <content>SELECT max(counter) FROM `docunator`.`file`;</content>
+            </snippet>
+            <snippet>
+                <title>select count(id) from scraper.results;</title>
+                <content>select count(id) from scraper.results;</content>
+            </snippet>
+            <snippet>
+                <title>select count(system_file_name) from docunator.file where file_timestamp like '%12-24%';</title>
+                <content>select count(system_file_name) from docunator.file where file_timestamp like '%12-24%';</content>
+            </snippet>
+            <snippet>
+                <title>select counter from docunator.file where url like '%socialistparty%' limit 1;</title>
+                <content>select counter from docunator.file where url like '%socialistparty%' limit 1;</content>
+            </snippet>
+            <snippet>
+                <title>select file_title, count(*) from file group by file_title;</title>
+                <content>select file_title, count(*) from file group by file_title;</content>
+            </snippet>
+            <snippet>
+                <title>set global max_connections = 3000;</title>
+                <content>set global max_connections = 3000;</content>
+            </snippet>
+            <snippet>
+                <title>show variables like "max_connections";</title>
+                <content>show variables like "max_connections";</content>
+            </snippet>
+            <snippet>
+                <title>select `file`.`file_title`, count(*) from docunator.file group by `file`.`file_title`;</title>
+                <content>select `file`.`file_title`, count(*) from docunator.file group by `file`.`file_title`;</content>
+            </snippet>
+            <snippet>
+                <title>alter table results1 add constraint urlcounter foreign key (urlcounter) references results (urlcounter);</title>
+                <content>alter table results1 add constraint urlcounter foreign key (urlcounter) references results (urlcounter);</content>
+            </snippet>
+            <snippet>
+                <title>select count(*) from docunator.file;</title>
+                <content>select count(*) from docunator.file;</content>
+            </snippet>
+            <snippet>
+                <title>select count(*) from scraper.rss_xml_parse;</title>
+                <content>select count(*) from scraper.rss_xml_parse;</content>
+            </snippet>
+            <snippet>
+                <title>select count(*) from scraper.results1;</title>
+                <content>select count(*) from scraper.results1;</content>
+            </snippet>
+            <snippet>
+                <title>INSERT IGNORE INTO rss_xml_parse (url, timestamp) SELECT url, STR_TO_DATE('1-01-2012', '%d-%m-%Y') from `html_url`;</title>
+                <content>INSERT IGNORE INTO rss_xml_parse (url, timestamp) SELECT url, STR_TO_DATE('1-01-2012', '%d-%m-%Y') from `html_url`;</content>
+            </snippet>
+            <snippet>
+                <title>mysqldump -u root -p3h4xb0011011001tCiK scraper &gt; scraper_10212016.sql</title>
+                <content>mysqldump -u root -p3h4xb0011011001tCiK scraper &gt; scraper_10212016.sql</content>
+            </snippet>
+            <snippet>
+                <title>ALTER TABLE feed ADD url_key varchar(500);</title>
+                <content>ALTER TABLE feed ADD url_key varchar(500);</content>
+            </snippet>
+            <snippet>
+                <title>select title from scraper.feed where date LIKE '%2016-10-25%';</title>
+                <content>select title from scraper.feed where date LIKE '%2016-10-25%';</content>
+            </snippet>
+            <snippet>
+                <title> mysqldump -d scraper -u root -p3h4xb0011011001tCiK &gt; dumpfile1.sql</title>
+                <content> mysqldump -d scraper -u root -p3h4xb0011011001tCiK &gt; dumpfile1.sql</content>
+            </snippet>
+            <snippet>
+                <title>select date from feed where date BETWEEN CAST('2016-12-23' AS DATE) AND CAST('2016-12-25' AS DATE);</title>
+                <content>select date from feed where date BETWEEN CAST('2016-12-23' AS DATE) AND CAST('2016-12-25' AS DATE);</content>
+            </snippet>
+            <snippet>
+                <title>select date, count(*) from feed where date BETWEEN CAST('2016-10-18' AS DATE) AND CAST('2016-12-25' AS DATE) AND title like '%trump%' group by date;</title>
+                <content>select date, count(*) from feed where date BETWEEN CAST('2016-10-18' AS DATE) AND CAST('2016-12-25' AS DATE) AND title like '%trump%' group by date;</content>
+            </snippet>
+            <snippet>
+                <title>select * from results into outfile '/var/lib/mysql-files/export.csv';</title>
+                <content>select * from results into outfile '/var/lib/mysql-files/export.csv';</content>
+            </snippet>
+            <snippet>
+                <title>SELECT * FROM search  WHERE MATCH(description) AGAINST('html' IN BOOLEAN MODE);</title>
+                <content>SELECT * FROM search  WHERE MATCH(description) AGAINST('html' IN BOOLEAN MODE);</content>
+            </snippet>
+            <snippet>
+                <title>nano /etc/mysql/mysql.conf.d/mysqld.cnf</title>
+                <content>nano /etc/mysql/mysql.conf.d/mysqld.cnf</content>
+            </snippet>
+            <snippet>
+                <title>sudo cp /lib/systemd/system/mysql.service /etc/systemd/system/
+sudo vim /etc/systemd/system/mysql.service # or your editor of choice
+Add the following lines to the bottom of the file:
+
+LimitNOFILE=infinity
+LimitMEMLOCK=infinity
+You could also set a numeric limit, eg LimitNOFILE=4096
+
+Now reload the Systemd configuration with:
+
+sudo systemctl daemon-reload</title>
+                <content>sudo cp /lib/systemd/system/mysql.service /etc/systemd/system/
+sudo vim /etc/systemd/system/mysql.service # or your editor of choice
+Add the following lines to the bottom of the file:
+
+LimitNOFILE=infinity
+LimitMEMLOCK=infinity
+You could also set a numeric limit, eg LimitNOFILE=4096
+
+Now reload the Systemd configuration with:
+
+sudo systemctl daemon-reload</content>
+            </snippet>
+            <snippet>
+                <title>SHOW PROCESSLIST;
+</title>
+                <content>SHOW PROCESSLIST;
+</content>
+            </snippet>
+            <snippet>
+                <title>show table status like 'rss_xml_parse';</title>
+                <content>show table status like 'rss_xml_parse';</content>
+            </snippet>
+            <snippet>
+                <title>mysqldump -u root -p3h4xb0011011001tCiK scraper --where="date BETWEEN '2017-07-13 00:00:00' and '2017-07-14 00:00:00'" &gt; 2017-07-13.sql</title>
+                <content>mysqldump -u root -p3h4xb0011011001tCiK scraper --where="date BETWEEN '2017-07-13 00:00:00' and '2017-07-14 00:00:00'" &gt; 2017-07-13.sql</content>
+            </snippet>
+            <snippet>
+                <title>mysqldump -u root -p3h4xb0011011001tCiK scraper rss_xml_parse --where="timestamp BETWEEN '2017-07-13' and '2017-07-14'" &gt; 2017-07-13.sql</title>
+                <content>mysqldump -u root -p3h4xb0011011001tCiK scraper rss_xml_parse --where="timestamp BETWEEN '2017-07-13' and '2017-07-14'" &gt; 2017-07-13.sql</content>
+            </snippet>
+            <snippet>
+                <title>mysql -u root -p3h4xb0011011001tCiK scraper</title>
+                <content>mysql -u root -p3h4xb0011011001tCiK scraper</content>
+            </snippet>
+            <snippet>
+                <title>SHOW ENGINE INNODB STATUS;</title>
+                <content>SHOW ENGINE INNODB STATUS;</content>
+            </snippet>
+            <snippet>
+                <title>mysql -u root -p3h4xb0011011001tCiK scraper &lt; dumpfile.sql</title>
+                <content>mysql -u root -p3h4xb0011011001tCiK scraper &lt; dumpfile.sql</content>
+            </snippet>
+            <snippet>
+                <title>select url from rss_xml where url like '%.xml%' into outfile '/var/lib/mysql-files/export8.csv';</title>
+                <content>select url from rss_xml where url like '%.xml%' into outfile '/var/lib/mysql-files/export8.csv';</content>
+            </snippet>
+            <snippet>
+                <title>select description from rss_xml where description like '%.xml%' into outfile '/var/lib/mysql-files/export12.csv';</title>
+                <content>select description from rss_xml where description like '%.xml%' into outfile '/var/lib/mysql-files/export12.csv';</content>
+            </snippet>
+            <snippet>
+                <title>select count(*) from rss_xml where timestamp like '%2017-10-24%';</title>
+                <content>select count(*) from rss_xml where timestamp like '%2017-10-24%';</content>
+            </snippet>
+            <snippet>
+                <title>counter table</title>
+                <content>CREATE TABLE `rss_xml_1` (
+  `counter` int(50) NOT NULL AUTO_INCREMENT,
+  `url` varchar(500) NOT NULL,
+  `title` varchar(500) DEFAULT NULL,
+  `timestamp` date NOT NULL,
+  `description` text,
+  `checked` varchar(25) DEFAULT NULL,
+  `solr_check` varchar(5) DEFAULT NULL,
+  `solr_url` varchar(5) DEFAULT NULL,
+FOREIGN KEY (`counter`) REFERENCES rss_xml(`counter`),
+  PRIMARY KEY (`counter`),
+  UNIQUE KEY `url` (`url`)
+) ENGINE=InnoDB AUTO_INCREMENT=594035864 DEFAULT CHARSET=latin1;</content>
+            </snippet>
+            <snippet>
+                <title>select url, description from rss_xml where description like '%feedproxy%' into outfile '/var/lib/mysql-files/feedproxy.csv';</title>
+                <content>select url, description from rss_xml where description like '%feedproxy%' into outfile '/var/lib/mysql-files/feedproxy.csv';</content>
+            </snippet>
+            <snippet>
+                <title>select url, description from rss_xml where description like '%feedburner%' into outfile '/var/lib/mysql-files/feedburner1.csv';</title>
+                <content>select url, description from rss_xml where description like '%feedburner%' into outfile '/var/lib/mysql-files/feedburner.csv';</content>
+            </snippet>
+            <snippet>
+                <title>select url, description from rss_xml where description like '%feedproxy%' or url like '%feedproxy%' into outfile '/var/lib/mysql-files/feedproxy2.csv';</title>
+                <content>select url, description from rss_xml where description like '%feedproxy%' or url like '%feedproxy%' into outfile '/var/lib/mysql-files/feedproxy2.csv';</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>Windows</title>
+        <snippets>
+            <snippet>
+                <title>mount \\192.168.1.102\store Y:</title>
+                <content>mount \\192.168.1.102\store Y:</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>MacOS</title>
+        <snippets>
+            <snippet>
+                <title>sudo /opt/local/apache2/bin/apachectl -k restart</title>
+                <content>sudo /opt/local/apache2/bin/apachectl -k restart</content>
+            </snippet>
+            <snippet>
+                <title>cd /opt/local/apache2/htdocs</title>
+                <content>cd /opt/local/apache2/htdocs</content>
+            </snippet>
+            <snippet>
+                <title>sudo port install phpmyadmin</title>
+                <content>sudo port install phpmyadmin</content>
+            </snippet>
+            <snippet>
+                <title>sudo nano /opt/local/apache2/conf/httpd.conf</title>
+                <content>sudo nano /opt/local/apache2/conf/httpd.conf</content>
+            </snippet>
+            <snippet>
+                <title>5106434018</title>
+                <content>5106434018</content>
+            </snippet>
+            <snippet>
+                <title>Apple key ⌘ + Shift + 3</title>
+                <content>Apple key ⌘ + Shift + 3</content>
+            </snippet>
+            <snippet>
+                <title>sshfs capstone@doczine.com:/usr/local/www/apache22/data /Users/hettich/Doczine</title>
+                <content>sshfs capstone@doczine.com:/usr/local/www/apache22/data /Users/hettich/Doczine</content>
+            </snippet>
+            <snippet>
+                <title>ssh -v macadmin@fixed-128-32-227-81.ls-advise.berkeley.edu</title>
+                <content>ssh -v macadmin@fixed-128-32-227-81.ls-advise.berkeley.edu</content>
+            </snippet>
+            <snippet>
+                <title>ssh -v jhettich@ls-etriever-prod.ist.berkeley.edu</title>
+                <content>ssh -v jhettich@ls-etriever-prod.ist.berkeley.edu</content>
+            </snippet>
+            <snippet>
+                <title>function get_access_level($staff_id) {
+    //echo("staff_id is " . $staff_id);
+    $mysqli = create_mysqli();
+    if (mysqli_connect_errno()) {
+        //$output = ("Connect failed.");
+        exit();
+    }
+    $stmt = $mysqli-&gt;prepare("SELECT a.access_lvl FROM staff s JOIN position p USING (position_id) JOIN application_access a USING (access_grp) WHERE s.active_flag = 'T' AND staff_id = ?");
+    //print_r($stmt);
+    $stmt-&gt;bind_param('s', $staff_id);
+    $stmt-&gt;execute();
+    $stmt-&gt;store_result();
+    if ($stmt-&gt;num_rows != 1) {
+        return false; 
+    }
+    else
+    {
+        $stmt-&gt;bind_result($access_lvl);
+        $stmt-&gt;fetch();
+        $stmt-&gt;close();
+        return $access_lvl;
+    }
+}</title>
+                <content>function get_access_level($staff_id) {
+    //echo("staff_id is " . $staff_id);
+    $mysqli = create_mysqli();
+    if (mysqli_connect_errno()) {
+        //$output = ("Connect failed.");
+        exit();
+    }
+    $stmt = $mysqli-&gt;prepare("SELECT a.access_lvl FROM staff s JOIN position p USING (position_id) JOIN application_access a USING (access_grp) WHERE s.active_flag = 'T' AND staff_id = ?");
+    //print_r($stmt);
+    $stmt-&gt;bind_param('s', $staff_id);
+    $stmt-&gt;execute();
+    $stmt-&gt;store_result();
+    if ($stmt-&gt;num_rows != 1) {
+        return false; 
+    }
+    else
+    {
+        $stmt-&gt;bind_result($access_lvl);
+        $stmt-&gt;fetch();
+        $stmt-&gt;close();
+        return $access_lvl;
+    }
+}</content>
+            </snippet>
+            <snippet>
+                <title>$_SESSION['staff_id'] = $staff_id;
+$_SESSION['access_grp'] = $access_grp;
+$_SESSION['access_lvl'] = $access_lvl;</title>
+                <content>$_SESSION['staff_id'] = $staff_id;
+$_SESSION['access_grp'] = $access_grp;
+$_SESSION['access_lvl'] = $access_lvl;</content>
+            </snippet>
+            <snippet>
+                <title>ls-etriever-prod.ist.berkeley.edu</title>
+                <content>ls-etriever-prod.ist.berkeley.edu</content>
+            </snippet>
+            <snippet>
+                <title>sudo su - app_etriever</title>
+                <content>sudo su - app_etriever</content>
+            </snippet>
+            <snippet>
+                <title>ls-etriever-prod.ist.berkeley.edu</title>
+                <content>ls-etriever-prod.ist.berkeley.edu</content>
+            </snippet>
+            <snippet>
+                <title>ls-etriever-dev.IST.1918.Berkeley.EDU</title>
+                <content>ls-etriever-dev.IST.1918.Berkeley.EDU</content>
+            </snippet>
+            <snippet>
+                <title>cd /var/www/etriever/html/models</title>
+                <content>cd /var/www/etriever/html/models</content>
+            </snippet>
+            <snippet>
+                <title>require_once('/var/www/etriever/html/models/conf_card_fns.php');
+require_once('/var/www/etriever/html/models/helper_fns.php');
+require_once('/var/www/etriever/html/models/bf_fns.php');
+require_once('/var/www/etriever/conf/db.php');
+</title>
+                <content>require_once('/var/www/etriever/html/models/conf_card_fns.php');
+require_once('/var/www/etriever/html/models/helper_fns.php');
+require_once('/var/www/etriever/html/models/bf_fns.php');
+require_once('/var/www/etriever/conf/db.php');</content>
+            </snippet>
+            <snippet>
+                <title>INCLUDE</title>
+                <content>/var/www/etriever/html/inc/</content>
+            </snippet>
+            <snippet>
+                <title>MODELS</title>
+                <content>MODELS</content>
+            </snippet>
+            <snippet>
+                <title>DB</title>
+                <content>/var/www/etriever/conf/db.php</content>
+            </snippet>
+            <snippet>
+                <title>sudo pkill bash</title>
+                <content>sudo pkill bash</content>
+            </snippet>
+            <snippet>
+                <title>sshfs randerson@10.5.1.231:/var/www /Users/computer/Documents/cti_remote</title>
+                <content>sshfs randerson@10.5.1.231:/var/www /Users/computer/Documents/cti_remote</content>
+            </snippet>
+            <snippet>
+                <title>sshfs randerson@10.5.1.54:/var/www /Users/computer/Documents/cti_remote_54</title>
+                <content>sshfs randerson@10.5.1.54:/var/www /Users/computer/Documents/cti_remote_54</content>
+            </snippet>
+            <snippet>
+                <title>ssh-keygen -R 88.198.65.4</title>
+                <content>ssh-keygen -R 88.198.65.4</content>
+            </snippet>
+            <snippet>
+                <title>sudo port -v selfupdate</title>
+                <content>sudo port -v selfupdate</content>
+            </snippet>
+            <snippet>
+                <title>http://listen.hardbase.fm/dsl.pls</title>
+                <content>http://listen.hardbase.fm/dsl.pls</content>
+            </snippet>
+            <snippet>
+                <title>http://kfi-am.akacast.akamaistream.net/7/121/19771/v1/auth.akacast.akamaistream.net/kfi-am.m3u</title>
+                <content>http://kfi-am.akacast.akamaistream.net/7/121/19771/v1/auth.akacast.akamaistream.net/kfi-am.m3u</content>
+            </snippet>
+            <snippet>
+                <title>http://14023.live.streamtheworld.com:80/KSFOAM_SC</title>
+                <content>http://14023.live.streamtheworld.com:80/KSFOAM_SC</content>
+            </snippet>
+            <snippet>
+                <title>networksetup -listallhardwareports
+</title>
+                <content>networksetup -listallhardwareports</content>
+            </snippet>
+            <snippet>
+                <title>sudo apachectl restart</title>
+                <content>sudo apachectl restart</content>
+            </snippet>
+            <snippet>
+                <title>sudo launchctl unload -F /Library/LaunchDaemons/org.serviio.server.plist</title>
+                <content>sudo launchctl unload -F /Library/LaunchDaemons/org.serviio.server.plist</content>
+            </snippet>
+            <snippet>
+                <title>https://somafm.com/dronezone256.pls</title>
+                <content>https://somafm.com/dronezone256.pls</content>
+            </snippet>
+            <snippet>
+                <title>https://somafm.com/dronezone.pls</title>
+                <content>https://somafm.com/dronezone.pls</content>
+            </snippet>
+            <snippet>
+                <title>http://c8icyelb.prod.playlists.ihrhls.com/177_icy</title>
+                <content>http://c8icyelb.prod.playlists.ihrhls.com/177_icy</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>Perl</title>
+        <snippets>
+            <snippet>
+                <title>perl -e 'print "Hello, world!\n";'</title>
+                <content>perl -e 'print "Hello, world!\n";'</content>
+            </snippet>
+            <snippet>
+                <title>#!/usr/bin/perl</title>
+                <content>#!/usr/bin/perl</content>
+            </snippet>
+            <snippet>
+                <title>#!/bin/sh -- #perl, to stop looping
+eval 'exec /usr/bin/perl -S $0 ${1+"$@"}'</title>
+                <content>#!/bin/sh -- #perl, to stop looping
+eval 'exec /usr/bin/perl -S $0 ${1+"$@"}'</content>
+            </snippet>
+            <snippet>
+                <title>bash sleep</title>
+                <content>sleep 2m</content>
+            </snippet>
+            <snippet>
+                <title>#!/bin/bash
+# parse PID's of matched processes and
+# feed them to kill -9 using xargs
+ps -ef | grep $1 | awk '{print $2}' | xargs kill -9</title>
+                <content>#!/bin/bash
+# parse PID's of matched processes and
+# feed them to kill -9 using xargs
+ps -ef | grep $1 | awk '{print $2}' | xargs kill -9</content>
+            </snippet>
+            <snippet>
+                <title>pkill bash</title>
+                <content>pkill bash</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>JavaScript</title>
+        <snippets>
+            <snippet>
+                <title>function alertBox()
+{
+alert("I am an alert box!");
+}</title>
+                <content>function myFunction()
+{
+alert("I am an alert box!");
+}</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>HTML</title>
+        <snippets>
+            <snippet>
+                <title>&amp;nbsp;</title>
+                <content>&amp;nbsp;</content>
+            </snippet>
+            <snippet>
+                <title>&lt;img alt="LS OUA IT" src="http://doczine.com/berkeley/graduation_forms/footer_logo_berkeley.png" style="float:left"&gt;&lt;/img&gt;</title>
+                <content>&lt;img alt="LS OUA IT" src="http://doczine.com/berkeley/graduation_forms/footer_logo_berkeley.png" style="float:left"&gt;&lt;/img&gt;</content>
+            </snippet>
+            <snippet>
+                <title>&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;td&gt;row 1, cell 1&lt;/td&gt;
+&lt;td&gt;row 1, cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;row 2, cell 1&lt;/td&gt;
+&lt;td&gt;row 2, cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt; </title>
+                <content>&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;td&gt;row 1, cell 1&lt;/td&gt;
+&lt;td&gt;row 1, cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;row 2, cell 1&lt;/td&gt;
+&lt;td&gt;row 2, cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt; </content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>ascii</title>
+        <snippets>
+            <snippet>
+                <title>big scroll</title>
+                <content>           .-.---------------------------------.-.
+          ((o))                                   )
+           \U/_______          _____         ____/
+             |                                  |
+             |                                  |
+             |                                  |
+             |      Here's a big scroll         |
+             |                                  |
+             |                                  |
+             |                                  |
+             |                                  |
+             |                                  |
+             |                                  |
+             |                                  |
+             |____    _______    __  ____    ___|KCK
+            /A\                                  \
+           ((o))                                  )
+            '-'----------------------------------'</content>
+            </snippet>
+            <snippet>
+                <title>scrolls</title>
+                <content>
+
+			 
+         _______________
+    ()==(              (@==()
+         '______________'|
+           |             |
+           |             |
+         __)_____________|
+    ()==(               (@==()
+         '--------------'
+                          PjP
+
+
+
+
+
+
+   ,-----------.
+  (_\UNIVERSITY \
+     |    of     |
+     |    LIFE   |
+    _|  DIPLOMA  |
+   (_/_____(*)___/
+            \\
+             ))      hjw
+             ^
+    ,-----------.
+   (_\           \
+      |           |
+      |           |
+      |           |
+      |           |
+     _|           |
+    (_/_____(*)___/
+             \\
+              ))
+              ^
+
+hjw
+
+           .-.---------------------------------.-.
+          ((o))                                   )
+           \U/_______          _____         ____/
+             |                                  |
+             |                                  |
+             |                                  |
+             |      Here's a big scroll         |
+             |                                  |
+             |                                  |
+             |                                  |
+             |                                  |
+             |                                  |
+             |                                  |
+             |                                  |
+             |____    _______    __  ____    ___|KCK
+            /A\                                  \
+           ((o))                                  )
+            '-'----------------------------------'
+
+
+
+             _______________________
+           =(__    ___      __     _)=
+             |                     |
+             |                     |
+             |    Here's a         |
+             |      smaller one.   |
+             |                     |
+             |                     |
+             |                     |
+             |                     |
+             |                     |
+             |__    ___   __    ___|KCK
+           =(_______________________)=</content>
+            </snippet>
+            <snippet>
+                <title>etriever</title>
+                <content>                                                                                                    
+                                                                                                    
+    //----------------------------------------------------------------------------------------//    
+    //            _______        __                           _______                         //    
+    //    .-----.|_     _|.----.|__|.-----.--.--.-----.----. |    ___|.-----.----.--------.   //    
+    //    |  -__|  |   |  |   _||  ||  -__|  |  |  -__|   _| |    ___||  _  |   _|        |   //    
+    //    |_____|  |___|  |__|  |__||_____|\___/|_____|__|   |___|    |_____|__| |__|__|__|   //    
+    //                                                                                        //    
+    //----------------------------------------------------------------------------------------//    
+                                                                                                    
+</content>
+            </snippet>
+            <snippet>
+                <title>bsd beastie</title>
+                <content>                                                                                                    
+     _______ _______ _______     _______ _______ _______ _______ _______ _______ _______ _______    
+    |\     /|\     /|\     /|   |\     /|\     /|\     /|\     /|\     /|\     /|\     /|\     /|   
+    | +---+ | +---+ | +---+ |   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |   
+    | |   | | |   | | |   | |   | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |   
+    | |B  | | |S  | | |D  | |   | |B  | | |e  | | |r  | | |k  | | |e  | | |l  | | |e  | | |y  | |   
+    | +---+ | +---+ | +---+ |   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |   
+    |/_____\|/_____\|/_____\|   |/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|   
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                            @                                                       
+                                           p@                                                       
+                                         #@@@                                                       
+                                       #@@@@#                                                       
+                                      #@@@@#                          *                             
+                                     #@@@@#                          #@#K                           
+                                   :@@@@@#                           *@@##                          
+                                  o@@@@@@                             #@@##                         
+                                 o@@@@@#p                              @@@##                        
+                                :@@@@@##                               #@@###                       
+                                @@@@@###       *@###K                   @@@###                      
+                               #@@@@@###   o###@@@@@##@##               #@@@##                      
+                              #@@@@@@###o####@@@@@@@@@######            #@@@###                     
+                              @@@@@@@######@@@@@@@@@@@@@######          @@@@###                     
+                             i@@@@@@#@@@@#@@@@@@#@##@@@@@######        #@@@@@#@                     
+                             #@@@@@#@@@@@@@@@##@@@#@##@@@@######      #@@@@@@##p                    
+                             #@@@@@@@@@@@@@@@@@@@@@####@@@@######  i#@@@@@@@@###                    
+                             @@@@@#@@@#o#@@@@@@@@@@@####@@@@######@@@@@@@@@@@###                    
+                             *@@@@@@@#   #@@@#o#@@@@####@@@@###@@@@@@@@@@@@@####                    
+                              @@@#@@@    @@@#    #@@@@@@@@@@@@@@@@@@@@@@@@@@####                    
+                              @@@@@#    #@@#      @@@@@@@@@@@@@@@@@@@@@@@@@####@                    
+                              #@#@#     @@#       #@@@@@@@@@@@@@@@@@@@@@@@####@                     
+                              #@@@     #@@         @@@@@@@@@@@@@@@@@@@@@@######                     
+                              ##@#     @@#         @@@@@@@@@@@@@@@@@@@@@######.                     
+                              ##@     :@#          #@@@@@@@@@@@@@@@@@@########                      
+                              #@#     #@@          #@@@@@@@@@@@@@@@##########                       
+                              #@ ###  ##           #@@@@@@@@@###############                        
+                              ##:  #p ## ##        #@@@@@@@@@@#############                         
+                              @## ### @ # #p       #@@@@@@@@@@############                          
+                             i@p########  ##       #@@@@@@@@@@@##########                           
+                             #@*######## *##       @@@@@@@@@@@@#######@#                            
+                             #@*####o@ #:###       @@@@@@@@@@@@#######                              
+                            #@@####:#@i#####      o@@@@@@@@@@@@#####@                               
+                           #@@@@p#i#@@p#####      #@@@@@@@@@@@@######                               
+                          #@@@@@@@@@@@p#####     .@@@@@@@@@@@@@######                               
+                          @@@@@##@@@#@#####      #@@@@@@@@@@@@@######                               
+                o        K@@@@@@@@@@@@@.        #@@@@@@@@@@@@@@######                               
+                 ##      #@@@@@@@@@@@@##      .#@@@@@@@@@@@@@@@######                               
+                  @.#*   #@@@@@@@@@@@@@###p####@@@@#@@@@@@@@@@@######                               
+                   :**#  #@@@@@#@@@@@@@#@#@@@@@@@@@@@@@@@@@@@@@######                               
+                   #**.@  @@@@@@#@@@@@@###@@@@@@@@@@@@@@@@@@@@#####@                                
+                   .::.@  @@@@@@@@#######@@@@@@@@@@@@@@@@@@@@@######                                
+             i#     # @.# #@@@##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#####@                                 
+              :.###    #:o #@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@######                                 
+              #**.p     .#  #@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@######                                  
+              .:***#    .#   ##@@@#@@@@@@@@@@@@@@@##@#@@@@@######                                   
+               p#i*.#  #.#     i#@@#@@@@@@@@@@@@##@@@@##@@######                                    
+               #  K*.:#.:K        #@#@@@@@@@@@##@@@@##########o                                     
+       ##:    :    #:*.*K           ##@@@@@@##@@@@@#####@#####                                      
+        #.*:*#     .p.**p   ##@@#.   #@####@@@@@@##@#########                                       
+         #**#     #*.*:*.:i#@@@@@@    i#@@@@@@@####@@@@#####o                                       
+          #:.K###*.**:#:*.*@@@@@@@#     @#@####@##@@@@@@####                                        
+           @i:******ii K:*.@@@@@@@#      #@@##@@@@@@@@@@####                                        
+             #K:::i#    :i*#@@@@@@p      #@@@@@@@@@@@@@@@###.                                       
+                          ###@@@@#       #@@@@@@@@@@@@@@@####                                       
+                         #@@@@########oo#@@@@@@@@@@@@@@@@@###                                       
+                        *@@@@@@@#@@@@@@#@@@@@@@@@@@@@@@@@@####                                      
+                        @@@@@@@@#@@@@@#######@@@@@@@@@#@@@####                                      
+                        .@@@@@@@#@@@###@@@@@@@#@@@@@@@#@@@@###p                                     
+                         #@@@@@@@@@#####@@@@@@@#@@@@@@@@@@@####                                     
+                          ##@@##@@@@####@@@@@@@@######@@@@@####                                     
+                           KK@@@@@####@@@@@@@@@@@@@@@@@@@@@####                                     
+                            #@@@@######@@@@@@@@@@@@@@@@@@@@####                                     
+                             @###@####@@@@@@@@@@@@@@@@@@@@@####                                     
+                                 .##@@@@@@@@@@@@@@@@@#@@@@@####                                     
+                                   @@@@@@@@@@@@@@@@@@#@@@@@@###                                     
+                                   @@@@@@@@@@@@@@@@@@#@@@@@@###                                     
+                                   #@@@@@@@@@@@@@@@@##@@@@@@@#:                                     
+                                    ##@@@@@@@@@@@@@###@@@#####                                      
+                                    ##@##@@@@###@@@###########                                      
+                                    @#########@@@#############                                      
+                                   @@@@##@@##@################                                      
+                                   #@@@@###########p##########                                      
+                                   #@@@@@@######o**.:#########K                                     
+                                   *@@@@@@@@@@@##i**.*#########                                     
+                                    @@@@@@@@@@@@@#p****########o                                    
+                                    #@@@@@@@@@@@@@@#:***########                                    
+                                     @@@@@@@@@@@@@###:**.########                                   
+                                     @@@@@@@@@@@@@####:**.#######p                                  
+                                      #@@@@@@@@@@######:**########*                                 
+                                       K##@#@@@@#@######o#@########*                                
+                                       i##############@#############o                               
+                                       @####@#########@###############                              
+                                       ####@ ##*@@: ######## ##########.                            
+                                       #  o#####@###@######## i##########                           
+                                    i####### #####o #####.i##   ###########K                        
+                               ...*#####@ @###  .@#####@iii####p. @#############:                   
+                      i#######@##o@#K: ########### #####oii###########@######@#######@.             
+                   #Kii*  .ii#@###########@###K #@#@#####p################@###########@#@#p         
+                K#i        *ii####@oopK##########@############################@@@@@#########@#      
+               @#*         iio#ii      iio###########################################@@@@@@#####p   
+              #*:#pi:.   .ii#i.         iii##################ii####################*   *@##@@@@###  
+              #   .ip@#@Koi#o:          iiii@##############piii###################          o#@@@## 
+               i        iioi#i*        iiiii#############iiiii###################    ::       #@@@##
+               oo:      iipi i#piiiiiiiiiiiiK########piiiiiii##################       *        #@@@@
+                 o##@KppppKi    *oK@######@Kpiiiiiiiiiiiiio#################@     i @##        #@@@#
+                           #:           iiiiiiiiiiiiiiio#################@     *po:#@@@       #@@@#@
+                            :#i.        iiiiiiiiiiiK#################p         :*#@@@@@#   :##@@@###
+                               i##@piiiiiiop@################K:.            i. #@@@@@@@@@@@@@@@###@ 
+                                                                          *pi#@@@@@@@@@@@@@@#####   
+                                                                        *i.@#@@@@@@@@@@@@#@###      
+                                                                       *ii#@@@@@@@@@######          
+                                                                      :.#@################.         
+                                                                                                    
+                                                                                                    
+                                                                                                    </content>
+            </snippet>
+            <snippet>
+                <title>scroll top</title>
+                <content>/*
+   .-.---------------------------------.-.
+  ((o))                                   )
+   \U/_______          _____         ____/
+     |                                  |
+     |                                  |
+     |      HTTP Post Variables         |
+                                       */
+</content>
+            </snippet>
+            <snippet>
+                <title>scroll bottom</title>
+                <content>/*   |                                   
+     |                                  |
+     |                                  |
+     |____    _______    __  ____    ___|
+    /A\                                  \
+   ((o))                                  )
+    '-'----------------------------------'
+*/</content>
+            </snippet>
+            <snippet>
+                <title>columns</title>
+                <content> Doric     Ionic   Corinthian
+ _____      ___      _____
+ (   )     @   @     \%%%/
+  |||       |||      \%%%/
+  |||       |||       |||
+  |||       |||       |||
+  |||       |||       |||
+ (___)     (___)     (___)
+      Evan M Corcoran
+
+
+
+
+
+
+
+From: llizard aka ejm
+
+Here's a try. The Corinthian decoration leaves a bit to be desired. (no
+pun intended there.) And should the Doric column really have ridges?
+
+Doric
+ _________________________
+   |__________|
+     ||||||||
+     ||||||||
+     ||||||||
+     ||||||||
+     ||||||||
+[snip]
+    _||||||||_
+   |_______ejm|
+
+
+
+Ionic
+ ______________________
+   (_,.....,_)
+     |||||||
+     |||||||
+     |||||||
+     |||||||
+     |||||||
+     |||||||
+[snip]
+     |||||||
+    ,_______,
+      )   (
+    ,      `
+  _/_________\_
+ |__________ejm|
+
+
+
+Corinthian
+ ______________________
+  (@^,^,^,^,^,@)
+    )`){o}(`(
+    ,`,`,`,`,`
+    ==========
+     ||||||||
+     ||||||||
+     ||||||||
+     ||||||||
+     ||||||||
+     ||||||||
+[snip]
+     ||||||||
+    ,________,
+      )    (
+    ,       `
+  _/__________\_
+ |___________ejm|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   ___---___
+                             ___---___---___---___
+                       ___---___---    *    ---___---___
+                 ___---___---    o/ 0_/  @  o ^   ---___---___
+           ___---___--- @  i_e J-U /|  -+D O|-| (o) /   ---___---___
+     ___---___---    __/|  //\  /|  |\  /\  |\|  |_  __--oj   ---___---___
+__---___---_________________________________________________________---___---__
+===============================================================================
+ ||||                                                                     ||||
+ |---------------------------------------------------------------------------|
+ |___-----___-----___-----___-----___-----___-----___-----___-----___-----___|
+ / _ \===/ _ \   / _ \===/ _ \   / _ \===/ _ \   / _ \===/ _ \   / _ \===/ _ \
+( (.\ oOo /.) ) ( (.\ oOo /.) ) ( (.\ oOo /.) ) ( (.\ oOo /.) ) ( (.\ oOo /.) )
+ \__/=====\__/   \__/=====\__/   \__/=====\__/   \__/=====\__/   \__/=====\__/
+    |||||||         |||||||         |||||||         |||||||         |||||||
+    |||||||         |||||||         |||||||         |||||||         |||||||
+    |||||||         |||||||         |||||||         |||||||         |||||||
+    |||||||         |||||||         |||||||         |||||||         |||||||
+    |||||||         |||||||         |||||||         |||||||         |||||||
+    |||||||         |||||||         |||||||         |||||||         |||||||
+    |||||||         |||||||         |||||||         |||||||         |||||||
+    |||||||         |||||||         |||||||         |||||||         |||||||
+    (oOoOo)         (oOoOo)         (oOoOo)         (oOoOo)         (oOoOo)
+    J%%%%%L         J%%%%%L         J%%%%%L         J%%%%%L         J%%%%%L
+   ZZZZZZZZZ       ZZZZZZZZZ       ZZZZZZZZZ       ZZZZZZZZZ       ZZZZZZZZZ
+  ===========================================================================
+__|_________________________________________________________________________|__
+_|___________________________________________________________________________|_
+|_____________________________________________________________________________|
+_______________________________________________________________________________</content>
+            </snippet>
+            <snippet>
+                <title>scroll big top</title>
+                <content>//----------------------------------------------------------------------//
+/*
+   .-.---------------------------------------------------------------.-.
+  ((o))                                                                 )
+   \U/_______                _____             _______             ____/
+     |                                                                |
+     |                                                                |
+     |                                                                |
+     |                                                                |
+     |                                                                |
+                                                                     */</content>
+            </snippet>
+            <snippet>
+                <title>scroll big bottom</title>
+                <content>/*
+     |                                                                |
+     |                                                                |
+     |                                                                |
+     |                                                                |
+     |____    _______     ___   _______    ____   ___  __  ____    ___|
+    /A\                                                               \
+   ((o))                                              HETTICH          )
+    '-'---------------------------------------------------------------'
+    </content>
+            </snippet>
+            <snippet>
+                <title>//-------------------------------------------------------//</title>
+                <content>//-----------------------------------------------------------------©r@ck3st™------//</content>
+            </snippet>
+            <snippet>
+                <title>comment box</title>
+                <content>//-------------------------------------------------------------------------------------------------//
+//--------Insert HTTP Post variables into MySQLi from proof_graduate_output.php form---------------//
+//-------------------------------------------------------------------------------------------------//
+</content>
+            </snippet>
+            <snippet>
+                <title>//---------------------------------------------------//
+//--------Updated on 10/4/2013 by ©r@ck3st™----------//
+//---------------------------------------------------//
+</title>
+                <content>//---------------------------------------------------//
+//--------Updated on 10/4/2013 by ©r@ck3st™----------//
+//---------------------------------------------------//
+</content>
+            </snippet>
+            <snippet>
+                <title>6632 Baywood Ave
+Las Vegas, NV 89103</title>
+                <content>6632 Baywood Ave
+Las Vegas, NV 89103</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>Oracle</title>
+        <snippets>
+            <snippet>
+                <title>$query = "SELECT STU_ID, ADV.CLASS_VW.TERM_CD, COURSE_CNTL_NUM, UNIT, COURSE_TITLE, ADV.CLASS_VW.DEPT_CD, ADV.CLASS_VW.COURSE_PREFIX_NUM, ADV.CLASS_VW.COURSE_NUM, ADV.CLASS_VW.COURSE_SUF_2_NUM, ADV.CLASS_VW.LOAD_DATE
+FROM ADV.ENROLL_COL_VW
+LEFT JOIN ADV.CLASS_VW USING (COURSE_CNTL_NUM)
+WHERE STU_ID = '10899294'";
+//echo $query;
+$slistq1 = oci_parse($oci_conn, $query);
+oci_execute($slistq1);
+$slist1 = array();
+$slist_units1 = 0;
+$k1 = 0;
+echo "&lt;br&gt;";
+echo "&lt;br style='max-width:40px; margin-bottom:15px;'&gt;";
+echo "Institution:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Dept_Course:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Semester_Units:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Repeat? (Y/N):&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Pass/Not Pass? (Y/N):";
+echo "&lt;br&gt;";
+while ($slist_row1 = oci_fetch_assoc($slistq1)) { 
+    $slist1 = $slist_row1;
+    //print_r($slist1);
+    echo "&lt;br&gt;";
+    //echo "&lt;span class='small' style='max-width:40px; margin-bottom:15px;'&gt;Institution:&lt;/span&gt;";
+    //I think I am going to catch this as an array blob?
+    echo "&lt;input type='text' name='eval_by_text_1' value='".$slist1[DEPT_CD]."'style='width:100px; margin: 0 0 0 0; margin-right:30px;' /&gt;";
+    echo "&lt;input type='text' name='eval_by_text_1' value='".$slist1[COURSE_TITLE]."' style='width:220px; margin: 0 0 0 0; margin-right:30px;' /&gt;";
+    echo "&lt;input type='text' name='eval_by_text_1' value='".floatval($slist1[UNIT])."' style='width:40px; margin: 0 0 0 0; margin-right:30px;' /&gt;";
+	echo "&lt;select style='width:60px; height:25px; margin-right:30px;'&gt;";
+	echo "&lt;option value='yes'&gt;Yes&lt;/option&gt;";
+	echo "&lt;option value='no'&gt;No&lt;/option&gt;";
+	echo "&lt;/select&gt;";
+	echo "&lt;select style='width:60px; height:25px; margin-right:30px;'&gt;";
+	echo "&lt;option value='yes'&gt;Yes&lt;/option&gt;";
+	echo "&lt;option value='no'&gt;No&lt;/option&gt;";
+	echo "&lt;/select&gt;";
+}</title>
+                <content>$query = "SELECT STU_ID, ADV.CLASS_VW.TERM_CD, COURSE_CNTL_NUM, UNIT, COURSE_TITLE, ADV.CLASS_VW.DEPT_CD, ADV.CLASS_VW.COURSE_PREFIX_NUM, ADV.CLASS_VW.COURSE_NUM, ADV.CLASS_VW.COURSE_SUF_2_NUM, ADV.CLASS_VW.LOAD_DATE
+FROM ADV.ENROLL_COL_VW
+LEFT JOIN ADV.CLASS_VW USING (COURSE_CNTL_NUM)
+WHERE STU_ID = '10899294'";
+//echo $query;
+$slistq1 = oci_parse($oci_conn, $query);
+oci_execute($slistq1);
+$slist1 = array();
+$slist_units1 = 0;
+$k1 = 0;
+echo "&lt;br&gt;";
+echo "&lt;br style='max-width:40px; margin-bottom:15px;'&gt;";
+echo "Institution:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Dept_Course:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Semester_Units:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Repeat? (Y/N):&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Pass/Not Pass? (Y/N):";
+echo "&lt;br&gt;";
+while ($slist_row1 = oci_fetch_assoc($slistq1)) { 
+    $slist1 = $slist_row1;
+    //print_r($slist1);
+    echo "&lt;br&gt;";
+    //echo "&lt;span class='small' style='max-width:40px; margin-bottom:15px;'&gt;Institution:&lt;/span&gt;";
+    //I think I am going to catch this as an array blob?
+    echo "&lt;input type='text' name='eval_by_text_1' value='".$slist1[DEPT_CD]."'style='width:100px; margin: 0 0 0 0; margin-right:30px;' /&gt;";
+    echo "&lt;input type='text' name='eval_by_text_1' value='".$slist1[COURSE_TITLE]."' style='width:220px; margin: 0 0 0 0; margin-right:30px;' /&gt;";
+    echo "&lt;input type='text' name='eval_by_text_1' value='".floatval($slist1[UNIT])."' style='width:40px; margin: 0 0 0 0; margin-right:30px;' /&gt;";
+	echo "&lt;select style='width:60px; height:25px; margin-right:30px;'&gt;";
+	echo "&lt;option value='yes'&gt;Yes&lt;/option&gt;";
+	echo "&lt;option value='no'&gt;No&lt;/option&gt;";
+	echo "&lt;/select&gt;";
+	echo "&lt;select style='width:60px; height:25px; margin-right:30px;'&gt;";
+	echo "&lt;option value='yes'&gt;Yes&lt;/option&gt;";
+	echo "&lt;option value='no'&gt;No&lt;/option&gt;";
+	echo "&lt;/select&gt;";
+}</content>
+            </snippet>
+            <snippet>
+                <title>SELECT STU_ID, STU_NAME, COURSE_CNTL_NUM, COURSE_TITLE, ADV.CLASS_VW.DEPT_CD, ADV.CLASS_VW.COURSE_PREFIX_NUM, ADV.CLASS_VW.COURSE_NUM, ADV.CLASS_VW.COURSE_SUF_2_NUM, ADV.CLASS_VW.INSTRUCTN_FORMAT_DET, ADV.ENROLL_COL_VW.PNP_FLAG, UNIT 
+FROM ADV.ENROLL_COL_VW
+INNER JOIN ADV.CLASS_VW USING (COURSE_CNTL_NUM)
+INNER JOIN ADV.STUDENT_COL_VW USING (STU_ID)</title>
+                <content>SELECT STU_ID, STU_NAME, COURSE_CNTL_NUM, COURSE_TITLE, ADV.CLASS_VW.DEPT_CD, ADV.CLASS_VW.COURSE_PREFIX_NUM, ADV.CLASS_VW.COURSE_NUM, ADV.CLASS_VW.COURSE_SUF_2_NUM, ADV.CLASS_VW.INSTRUCTN_FORMAT_DET, ADV.ENROLL_COL_VW.PNP_FLAG, UNIT 
+FROM ADV.ENROLL_COL_VW
+INNER JOIN ADV.CLASS_VW USING (COURSE_CNTL_NUM)
+INNER JOIN ADV.STUDENT_COL_VW USING (STU_ID)</content>
+            </snippet>
+            <snippet>
+                <title>SELECT DISTINCT stu_id,
+                stu_name,
+                email_address,
+                cum_gpa,
+                lgr_tot_attempt_unit,
+                ug_grad_flag,
+                role_cd,
+                term_yr,
+                term_cd,
+                coll_cd
+FROM   adv.student_col_vw
+       INNER JOIN adv.stuaddr_col_vw using (stu_id)
+       INNER JOIN adv.studeg_col_vw using (stu_id)</title>
+                <content>SELECT DISTINCT stu_id,
+                stu_name,
+                email_address,
+                cum_gpa,
+                lgr_tot_attempt_unit,
+                ug_grad_flag,
+                role_cd,
+                term_yr,
+                term_cd,
+                coll_cd
+FROM   adv.student_col_vw
+       INNER JOIN adv.stuaddr_col_vw using (stu_id)
+       INNER JOIN adv.studeg_col_vw using (stu_id)</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>VI</title>
+        <snippets>
+            <snippet>
+                <title>vi notes</title>
+                <content>
+Vi Cheat Sheet
+
+    Modes
+    Quitting
+    Inserting Text
+    Motion
+    Deleting Text
+    Yanking
+    Changing Text
+    Putting Text
+    Buffers
+
+	
+
+    Markers
+    Searching
+    Replacing Text
+    Regular Expressions
+    Counts
+    Ranges
+    Files
+    Other
+
+
+Click here for the Advanced VI Cheatsheet
+Modes
+Vi has two modes insertion mode and command mode. The editor begins in command mode, where the cursor movement and text deletion and pasting occur. Insertion mode begins upon entering an insertion or change command. [ESC] returns the editor to command mode (where you can quit, for example by typing :q!). Most commands execute as soon as you type them except for "colon" commands which execute when you press the ruturn key.
+
+
+
+Quitting
+:x	Exit, saving changes
+:q	Exit as long as there have been no changes
+ZZ	Exit and save changes if any have been made
+:q!	Exit and ignore any changes
+
+
+
+Inserting Text
+i	Insert before cursor
+I	Insert before line
+a	Append after cursor
+A	Append after line
+o	Open a new line after current line
+O	Open a new line before current line
+r	Replace one character
+R	Replace many characters
+
+
+
+Motion
+h	Move left
+j	Move down
+k	Move up
+l	Move right
+w	Move to next word
+W	Move to next blank delimited word
+b	Move to the beginning of the word
+B	Move to the beginning of blank delimted word
+e	Move to the end of the word
+E	Move to the end of Blank delimited word
+(	Move a sentence back
+)	Move a sentence forward
+{	Move a paragraph back
+}	Move a paragraph forward
+0	Move to the begining of the line
+$	Move to the end of the line
+1G	Move to the first line of the file
+G	Move to the last line of the file
+nG	Move to nth line of the file
+:n	Move to nth line of the file
+fc	Move forward to c
+Fc	Move back to c
+H	Move to top of screen
+M	Move to middle of screen
+L	Move to botton of screen
+%	Move to associated ( ), { }, [ ]
+
+
+
+Deleting Text
+Almost all deletion commands are performed by typing d followed by a motion. For example, dw deletes a word. A few other deletes are:
+x	Delete character to the right of cursor
+X	Delete character to the left of cursor
+D	Delete to the end of the line
+dd	Delete current line
+:d	Delete current line
+
+
+
+Yanking Text
+Like deletion, almost all yank commands are performed by typing y followed by a motion. For example, y$ yanks to the end of the line. Two other yank commands are:
+yy	Yank the current line
+:y	Yank the current line
+
+
+
+Changing text
+The change command is a deletion command that leaves the editor in insert mode. It is performed by typing c followed by a motion. For wxample cw changes a word. A few other change commands are:
+C	Change to the end of the line
+cc	Change the whole line
+
+
+
+Putting text
+p	Put after the position or after the line
+P	Put before the poition or before the line
+
+
+
+Buffers
+Named buffers may be specified before any deletion, change, yank or put command. The general prefix has the form "c where c is any lowercase character. for example, "adw deletes a word into buffer a. It may thereafter be put back into text with an appropriate "ap.
+
+
+
+Markers
+Named markers may be set on any line in a file. Any lower case letter may be a marker name. Markers may also be used as limits for ranges.
+mc	Set marker c on this line
+`c	Go to beginning of marker c line.
+'c	Go to first non-blank character of marker c line.
+
+
+
+Search for strings
+/string	Search forward for string
+?string	Search back for string
+n	Search for next instance of string
+N	Search for previous instance of string
+
+
+
+Replace
+The search and replace function is accomplished with the :s command. It is commonly used in combination with ranges or the :g command (below).
+:s/pattern/string/flags	Replace pattern with string according to flags.
+g	Flag - Replace all occurences of pattern
+c	Flag - Confirm replaces.
+&amp;	Repeat last :s command
+
+
+
+Regular Expressions
+. (dot)	Any single character except newline
+*	zero or more occurances of any character
+[...]	Any single character specified in the set
+[^...]	Any single character not specified in the set
+^	Anchor - beginning of the line
+$	Anchor - end of line
+\&lt;	Anchor - begining of word
+\&gt;	Anchor - end of word
+\(...\)	Grouping - usually used to group conditions
+\n	Contents of nth grouping
+
+[...] - Set Examples [A-Z]	The SET from Capital A to Capital Z
+[a-z]	The SET from lowercase a to lowercase z
+[0-9]	The SET from 0 to 9 (All numerals)
+[./=+]	The SET containing . (dot), / (slash), =, and +
+[-A-F]	The SET from Capital A to Capital F and the dash (dashes must be specified first)
+[0-9 A-Z]	The SET containing all capital letters and digits and a space
+[A-Z][a-zA-Z]	In the first position, the SET from Capital A to Capital Z
+In the second character position, the SET containing all letters
+
+Regular Expression Examples /Hello/	Matches if the line contains the value Hello
+/^TEST$/	Matches if the line contains TEST by itself
+/^[a-zA-Z]/	Matches if the line starts with any letter
+/^[a-z].*/	Matches if the first character of the line is a-z and there is at least one more of any character following it
+/2134$/	Matches if line ends with 2134
+/\(21|35\)/	Matches is the line contains 21 or 35
+Note the use of ( ) with the pipe symbol to specify the 'or' condition
+/[0-9]*/	Matches if there are zero or more numbers in the line
+/^[^#]/	Matches if the first character is not a # in the line
+Notes:
+1. Regular expressions are case sensitive
+2. Regular expressions are to be used where pattern is specified
+
+
+Counts
+Nearly every command may be preceded by a number that specifies how many times it is to be performed. For example, 5dw will delete 5 words and 3fe will move the cursor forward to the 3rd occurence of the letter e. Even insertions may be repeated conveniently with thismethod, say to insert the same line 100 times.
+
+
+
+Ranges
+Ranges may precede most "colon" commands and cause them to be executed on a line or lines. For example :3,7d would delete lines 3-7. Ranges are commonly combined with the :s command to perform a replacement on several lines, as with :.,$s/pattern/string/g to make a replacement from the current line to the end of the file.
+:n,m	Range - Lines n-m
+:.	Range - Current line
+:$	Range - Last line
+:'c	Range - Marker c
+:%	Range - All lines in file
+:g/pattern/	Range - All lines that contain pattern
+
+
+
+Files
+:w file	Write to file
+:r file	Read file in after line
+:n	Go to next file
+:p	Go to previos file
+:e file	Edit file
+!!program	Replace line with output from program
+
+
+
+Other
+~	Toggle upp and lower case
+J	Join lines
+.	Repeat last text-changing command
+u	Undo last change
+U	Undo all changes to line
+
+
+
+Return to the top
+Page produced by Lagmonster - Oct 2000
+</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>BASH</title>
+        <snippets>
+            <snippet>
+                <title>file.sh</title>
+                <content>#!/bin/sh
+  php -f /var/www/filedownload.php</content>
+            </snippet>
+            <snippet>
+                <title>basher.sh</title>
+                <content>while :; do
+bash /var/www/file.sh &amp;&gt; /dev/null&amp;
+sleep 1
+done</content>
+            </snippet>
+            <snippet>
+                <title>while :; do</title>
+                <content>while :; do</content>
+            </snippet>
+            <snippet>
+                <title>scraper.sh</title>
+                <content>#/usr/bin/php
+while :; do
+        curl "http://localhost/scraper.php" &gt; /dev/null
+  sleep 480
+done</content>
+            </snippet>
+            <snippet>
+                <title>
+    currency – Currency converter.
+    stocks – Provides certain Stock details.
+    weather – Displays weather details of your place.
+    crypt – Encrypt and decrypt files.
+    movies – Search and display a movie details.
+    taste – Recommendation engine that provides three similar items like the supplied item (The items can be books, music, artists, movies, and games etc).
+    short – URL Shortner
+    geo – Provides the details of wan, lan, router, dns, mac, and ip.
+    cheat – Provides cheat-sheets for various Linux commands.
+    ytview – Watch YouTube from Terminal.
+    cloudup – A tool to backup your GitHub repositories to bitbucket.
+    qrify – Turns the given string into a qr code.
+</title>
+                <content>
+    currency – Currency converter.
+    stocks – Provides certain Stock details.
+    weather – Displays weather details of your place.
+    crypt – Encrypt and decrypt files.
+    movies – Search and display a movie details.
+    taste – Recommendation engine that provides three similar items like the supplied item (The items can be books, music, artists, movies, and games etc).
+    short – URL Shortner
+    geo – Provides the details of wan, lan, router, dns, mac, and ip.
+    cheat – Provides cheat-sheets for various Linux commands.
+    ytview – Watch YouTube from Terminal.
+    cloudup – A tool to backup your GitHub repositories to bitbucket.
+    qrify – Turns the given string into a qr code.
+</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>C</title>
+        <snippets>
+            <snippet>
+                <title>Simple C Loop</title>
+                <content>static void cliInitHelp() {
+    int commandslen = sizeof(commandHelp)/sizeof(struct commandHelp);
+    int groupslen = sizeof(commandGroups)/sizeof(char*);
+    int i, len, pos = 0;
+    helpEntry tmp;
+
+    helpEntriesLen = len = commandslen+groupslen;
+    helpEntries = malloc(sizeof(helpEntry)*len);
+
+    for (i = 0; i &lt; groupslen; i++) {
+        tmp.argc = 1;
+        tmp.argv = malloc(sizeof(sds));
+        tmp.argv[0] = sdscatprintf(sdsempty(),"@%s",commandGroups[i]);
+        tmp.full = tmp.argv[0];
+        tmp.type = CLI_HELP_GROUP;
+        tmp.org = NULL;
+        helpEntries[pos++] = tmp;
+    }
+
+    for (i = 0; i &lt; commandslen; i++) {
+        tmp.argv = sdssplitargs(commandHelp[i].name,&amp;tmp.argc);
+        tmp.full = sdsnew(commandHelp[i].name);
+        tmp.type = CLI_HELP_COMMAND;
+        tmp.org = &amp;commandHelp[i];
+        helpEntries[pos++] = tmp;
+    }
+}</content>
+            </snippet>
+            <snippet>
+                <title>Simple If Loop</title>
+                <content>                if (j == argc) {
+                    cliOutputCommandHelp(help,1);
+                }
+</content>
+            </snippet>
+            <snippet>
+                <title>If Else Loop</title>
+                <content>    if (strncasecmp(buf,"help ",5) == 0) {
+        startpos = 5;
+        while (isspace(buf[startpos])) startpos++;
+        mask = CLI_HELP_COMMAND | CLI_HELP_GROUP;
+    } else {
+        mask = CLI_HELP_COMMAND;
+    }</content>
+            </snippet>
+            <snippet>
+                <title>If Else Return Loop</title>
+                <content>        if (context-&gt;err) {
+            fprintf(stderr,"Could not connect to Redis at ");
+            if (config.hostsocket == NULL)
+                fprintf(stderr,"%s:%d: %s\n",config.hostip,config.hostport,context-&gt;errstr);
+            else
+                fprintf(stderr,"%s: %s\n",config.hostsocket,context-&gt;errstr);
+            redisFree(context);
+            context = NULL;
+            return REDIS_ERR;
+        }</content>
+            </snippet>
+            <snippet>
+                <title>Do Loop</title>
+                <content>// echo machine
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main ()
+{
+  string str;
+  do {
+    cout &lt;&lt; "Enter text: ";
+    getline (cin,str);
+    cout &lt;&lt; "You entered: " &lt;&lt; str &lt;&lt; '\n';
+  } while (str != "goodbye");
+}</content>
+            </snippet>
+            <snippet>
+                <title>Switch Case Break</title>
+                <content>switch (x) {
+  case 1:
+  case 2:
+  case 3:
+    cout &lt;&lt; "x is 1, 2 or 3";
+    break;
+  default:
+    cout &lt;&lt; "x is not 1, 2 nor 3";
+  }</content>
+            </snippet>
+            <snippet>
+                <title>If Else If Else If Else</title>
+                <content>        if (!strcmp(reply2-&gt;str,"string")) {
+            sizecmd = "STRLEN";
+            type = TYPE_STRING;
+        } else if (!strcmp(reply2-&gt;str,"list")) {
+            sizecmd = "LLEN";
+            type = TYPE_LIST;
+        } else if (!strcmp(reply2-&gt;str,"set")) {
+            sizecmd = "SCARD";
+            type = TYPE_SET;
+        } else if (!strcmp(reply2-&gt;str,"hash")) {
+            sizecmd = "HLEN";
+            type = TYPE_HASH;
+        } else if (!strcmp(reply2-&gt;str,"zset")) {
+            sizecmd = "ZCARD";
+            type = TYPE_ZSET;
+        } else if (!strcmp(reply2-&gt;str,"none")) {
+            freeReplyObject(reply1);
+            freeReplyObject(reply2);
+            continue;
+        } else {
+            fprintf(stderr, "Unknown key type '%s' for key '%s'\n",
+                reply2-&gt;str, reply1-&gt;str);
+            exit(1);
+        }
+</content>
+            </snippet>
+            <snippet>
+                <title>./ Run Application</title>
+                <content>./ Run Application
+./print_integer.exe</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>PostGre</title>
+        <snippets>
+            <snippet>
+                <title>pg_dump -U postgres cti -f /var/backup/inmage_db_12162013.sql</title>
+                <content>pg_dump -U postgres cti -f /var/backup/inmage_db_12162013.sql</content>
+            </snippet>
+            <snippet>
+                <title>rsync --rsh="sshpass -p m48j7vs5 ssh -l randerson" /var/backup/inmate_db_12162013.sql 10.5.1.80:/home/randerson/backup_postgres_51/inmate_db_12162013.sql</title>
+                <content>rsync --rsh="sshpass -p m48j7vs5 ssh -l randerson" /var/backup/inmate_db_12162013.sql 10.5.1.80:/home/randerson/backup_postgres_51/inmate_db_12162013.sql</content>
+            </snippet>
+            <snippet>
+                <title>\d calls_2013_q4</title>
+                <content>\d calls_2013_q4</content>
+            </snippet>
+            <snippet>
+                <title>psql -U randerson -p 5434 cti</title>
+                <content>psql -U randerson -p 5434 cti</content>
+            </snippet>
+            <snippet>
+                <title>\q</title>
+                <content>\q</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>REV</title>
+        <snippets>
+            <snippet>
+                <title>Cancelled and sent RMA code.</title>
+                <content>Cancelled and sent RMA code.</content>
+            </snippet>
+            <snippet>
+                <title>Processed 50% credit and sent RMA code for full refund.  Offered downsale.</title>
+                <content>Processed 50% credit and sent RMA code for full refund.  Offered downsale.</content>
+            </snippet>
+            <snippet>
+                <title>Cancelled and sent confirmation.</title>
+                <content>Cancelled and sent confirmation.</content>
+            </snippet>
+            <snippet>
+                <title>Advised she would have to report the package lost or stolen to the post office to receive the remainder refund on the account.</title>
+                <content>Advised she would have to report the package lost or stolen to the post office to receive the remainder refund on the account.</content>
+            </snippet>
+            <snippet>
+                <title> Offered downsale.</title>
+                <content> Offered downsale.</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>Crackest</title>
+        <snippets>
+            <snippet>
+                <title>bash /var/www/html/filedownload.sh</title>
+                <content>bash /var/www/filedownload.sh</content>
+            </snippet>
+            <snippet>
+                <title>bash /var/www/warcdownload.sh</title>
+                <content>bash /var/www/warcdownload.sh</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>Links</title>
+        <snippets>
+            <snippet>
+                <title>http://kfi-am.akacast.akamaistream.net/7/121/19771/v1/auth.akacast.akamaistream.net/kfi-am.m3u</title>
+                <content>http://kfi-am.akacast.akamaistream.net/7/121/19771/v1/auth.akacast.akamaistream.net/kfi-am.m3u</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>Android</title>
+        <snippets>
+            <snippet>
+                <title>$ ip addr show
+ip addr show</title>
+                <content>$ ip addr show
+ip addr show</content>
+            </snippet>
+        </snippets>
+    </folder>
+</folders>
